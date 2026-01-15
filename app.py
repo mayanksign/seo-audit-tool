@@ -178,9 +178,7 @@ def analyze(domain):
         data["title"] = soup.title.string.strip() if soup.title else "NA"
 
         meta = soup.find("meta", attrs={"name": "description"})
-        data["meta"] = meta["content"][:160] if meta else "NA"
-        # data["meta"] = meta["content"][:160] if meta else "NA"
-
+        data["meta"] = meta["content"][:60] if meta else "NA"
 
         text = soup.get_text()
         data["words"] = len(text.split())
@@ -217,7 +215,7 @@ def analyze(domain):
 @app.route("/", methods=["GET", "POST"])
 def home():
     results = []
- 
+
     if request.method == "POST":
         domains = request.form["domains"].splitlines()
 
