@@ -114,7 +114,7 @@ tr:hover td {
 <body>
 <div class="card">
 
-<h1>🚀 Professional SEO Audit Tool</h1>
+<h1>🚀 Free SEO Audit Tool</h1>
 
 <form method="post">
     <textarea name="domains" placeholder="Enter domains (one per line)..."></textarea>
