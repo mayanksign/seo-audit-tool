@@ -116,6 +116,23 @@ tr:hover td {
   text-align: center;
   margin-bottom: 15px;
 }
+
+
+.trust-lines {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.trust-lines p {
+  display: inline-block;
+  margin: 5px 8px;
+  padding: 6px 12px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  font-size: 13px;
+  color: #fff;
+}
+
 </style>
 </head>
 
