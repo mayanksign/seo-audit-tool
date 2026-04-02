@@ -130,7 +130,15 @@ tr:hover td {
 
 <form method="post">
     <textarea name="domains" placeholder="Enter domains (one per line)..."></textarea>
-    <button>Run SEO Audit</button>
+
+<button>Analyze Website Now </button>
+
+<div class="trust-lines">
+  <p>✅ 1000+ Websites Analyzed</p>
+  <p>✅ Free & Instant Report</p>
+  <p>✅ No Signup Required</p>
+</div>
+   
 </form>
 
 {% if results %}
