@@ -108,6 +108,14 @@ tr:hover td {
     opacity: 0.6;
     font-size: 13px;
 }
+
+
+.subheading {
+  font-size: 16px;
+  color: #cbd5e1; /* light grey */
+  text-align: center;
+  margin-bottom: 15px;
+}
 </style>
 </head>
 
@@ -115,7 +123,10 @@ tr:hover td {
 <div class="card">
 
 <h1>🚀 Free SEO Audit Tool</h1>
-<p>Check your website SEO score instantly & fix issues in seconds</p>
+
+<p class="subheading">
+  Check your website SEO score instantly & fix issues in seconds
+</p>
 
 <form method="post">
     <textarea name="domains" placeholder="Enter domains (one per line)..."></textarea>
