@@ -9,12 +9,10 @@ HTML = """
 <!DOCTYPE html>
 <html>
 <head>
-<head>
   <title>Free SEO Audit Tool Online | Check Website SEO Score Instantly</title>
 
   <meta name="description" content="Analyze your website SEO instantly with our free SEO audit tool. Get detailed reports, errors, and suggestions without signup.">
 
-</head>
 <style>
 * {
     margin: 0;
