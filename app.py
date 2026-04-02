@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template_string
+from flask import Flask, request, render_template_string, send_from_directory
 import requests, socket
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse, urljoin
@@ -202,6 +202,17 @@ tr:hover td {
 </body>
 </html>
 """
+
+@app.route('/robots.txt')
+def robots():
+    return send_from_directory('.', 'robots.txt')
+
+@app.route('/sitemap.xml')
+def sitemap():
+    return send_from_directory('.', 'sitemap.xml')
+
+
+
 
 def analyze(domain):
     data = {"domain": domain}
