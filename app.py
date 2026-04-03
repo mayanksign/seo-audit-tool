@@ -9,6 +9,11 @@ HTML = """
 <!DOCTYPE html>
 <html>
 <head>
+
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
   <title>Free SEO Audit Tool Online | Check Website SEO Score Instantly</title>
 
   <meta name="description" content="Analyze your website SEO instantly with our free SEO audit tool. Get detailed reports, errors, and suggestions without signup.">
