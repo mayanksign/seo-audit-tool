@@ -10,7 +10,7 @@ HTML = """
 <html>
 <head>
 
-<link rel="icon" href="/favicon.ico">
+<link rel="icon" href="/favicon.ico?v=2">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
