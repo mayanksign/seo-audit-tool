@@ -248,31 +248,7 @@ tr:hover td {
 
 
   <footer>
-  <body>
-<footer style="
-    width:100%;
-    text-align:center;
-    padding:20px;
-    background:#0f172a;
-    color:#cbd5f5;
-    margin-top:50px;
-">
 
-    <p style="margin:0;">
-        © 2026 SEO Score Tool
-    </p>
-
-    <p style="margin-top:10px;">
-        <a href="/privacy-policy" style="color:#38bdf8; text-decoration:none; margin-right:15px;">
-            Privacy Policy
-        </a>
-
-        <a href="/terms" style="color:#38bdf8; text-decoration:none;">
-            Terms & Conditions
-        </a>
-    </p>
-
-</footer>
         
     </footer>
 </html>
