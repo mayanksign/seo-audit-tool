@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template_string, send_from_directory
+from flask import Flask, request, render_template, render_template_string, send_from_directory
 import requests, socket
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse, urljoin
@@ -157,6 +157,9 @@ tr:hover td {
 </head>
 
 <body>
+
+<a href="/about">About</a>
+
 <div class="card">
 
 <h1>🚀 Free SEO Audit Tool</h1>
@@ -220,6 +223,12 @@ tr:hover td {
 </html>
 """
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+
+
 @app.route('/robots.txt')
 def robots():
     return send_from_directory('.', 'robots.txt')
@@ -232,6 +241,8 @@ def sitemap():
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory('.', 'favicon.ico')
+
+
 
 
 
