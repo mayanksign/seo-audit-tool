@@ -37,7 +37,26 @@ HTML = """
     box-sizing: border-box;
 }
 
-body {
+body 
+
+<body>
+
+<!-- ✅ NAVBAR YAHAN -->
+<nav style="display:flex; justify-content:space-between; padding:15px 40px; background:#0f172a; color:white;">
+    <div>🚀 SEO Score Tool</div>
+    <div>
+        <a href="/" style="color:white; margin-right:20px;">Home</a>
+        <a href="/about" style="color:white; margin-right:20px;">About</a>
+        <a href="/contact" style="color:white;">Contact</a>
+    </div>
+</nav>
+
+<!-- ✅ CONTENT -->
+<h1>Free SEO Audit Tool</h1>
+<p>Check your website SEO score...</p>
+
+
+{
     min-height: 100vh;
     background: linear-gradient(135deg, #0f172a, #1e293b);
     display: flex;
@@ -244,13 +263,15 @@ tr:hover td {
 </div>
 
 
+<!-- ✅ FOOTER YAHAN -->
+<footer style="text-align:center; padding:20px; background:#0f172a; color:#cbd5f5; margin-top:50px;">
+    <p>© 2026 SEO Score Tool</p>
+    <a href="/privacy-policy" style="color:#38bdf8;">Privacy Policy</a> |
+    <a href="/terms" style="color:#38bdf8;">Terms</a>
+</footer>
+
 </body>
 
-
-  <footer>
-
-        
-    </footer>
 </html>
 """
 
