@@ -41,20 +41,6 @@ body
 
 <body>
 
-<!-- ✅ NAVBAR YAHAN -->
-<nav style="display:flex; justify-content:space-between; padding:15px 40px; background:#0f172a; color:white;">
-    <div>🚀 SEO Score Tool</div>
-    <div>
-        <a href="/" style="color:white; margin-right:20px;">Home</a>
-        <a href="/about" style="color:white; margin-right:20px;">About</a>
-        <a href="/contact" style="color:white;">Contact</a>
-    </div>
-</nav>
-
-<!-- ✅ CONTENT -->
-<h1>Free SEO Audit Tool</h1>
-<p>Check your website SEO score...</p>
-
 
 {
     min-height: 100vh;
