@@ -39,8 +39,6 @@ HTML = """
 
 body 
 
-<body>
-
 
 {
     min-height: 100vh;
