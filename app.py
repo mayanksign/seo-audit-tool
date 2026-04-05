@@ -243,7 +243,12 @@ tr:hover td {
 
 </div>
 
-<body>
+
+</body>
+
+
+  <footer>
+  <body>
 <footer style="
     width:100%;
     text-align:center;
@@ -268,11 +273,6 @@ tr:hover td {
     </p>
 
 </footer>
-</body>
-
-
-  <footer>
-  hello
         
     </footer>
 </html>
