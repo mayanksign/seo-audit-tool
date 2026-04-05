@@ -156,7 +156,6 @@ tr:hover td {
 </style>
 </head>
 
-<body>
 <footer style="
     width:100%;
     text-align:center;
