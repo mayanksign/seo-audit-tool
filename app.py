@@ -249,13 +249,6 @@ tr:hover td {
 </div>
 
 
-<!-- ✅ FOOTER YAHAN -->
-<footer style="text-align:center; padding:20px; background:#0f172a; color:#cbd5f5; margin-top:50px;">
-    <p>© 2026 SEO Score Tool</p>
-    <a href="/privacy-policy" style="color:#38bdf8;">Privacy Policy</a> |
-    <a href="/terms" style="color:#38bdf8;">Terms</a>
-</footer>
-
 </body>
 
 </html>
