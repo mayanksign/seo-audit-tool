@@ -158,16 +158,28 @@ tr:hover td {
 
 <body>
 
-<nav style="display:flex; justify-content:space-between; align-items:center; padding:15px 30px; background:#0f172a; color:white;">
+<nav style="
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:#0f172a;
+    color:white;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+">
     
     <div style="font-weight:bold; font-size:18px;">
-        🚀 SEO Tool
+        🚀 SEO SCORE
     </div>
 
     <div>
         <a href="/" style="margin-right:20px; color:white; text-decoration:none;">Home</a>
         <a href="/about" style="margin-right:20px; color:white; text-decoration:none;">About</a>
-        <a href="/contact" style="margin-right:20px; color:white; text-decoration:none;">Contact</a>
+        <a href="/contact" style="color:white; text-decoration:none;">Contact</a>
     </div>
 
 </nav>
