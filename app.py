@@ -177,7 +177,7 @@ tr:hover td {
         <a href="/" style="text-decoration:none;">
             <span style="font-size:25px; font-weight:500; letter-spacing:1px;">
                 <span style="color:#2563eb;">SEO</span> 
-                <span style="color:#22c55e;">SCORE</span>
+                <span style="color:#cbd5e1;">SCORE</span>
             </span>
         </a>
     </div>
