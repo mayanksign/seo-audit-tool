@@ -176,9 +176,18 @@ tr:hover td {
 
 
     
-<div style="display:flex; align-items:center; gap:10px;">
-    <img src="{{ url_for('static', filename='logo.png') }}" style="height:40px;">
-    <span style="font-weight:bold; font-size:18px;">SEO SCORE</span>
+<div style="display:flex; align-items:center; gap:12px;">
+    <a href="/" style="display:flex; align-items:center; text-decoration:none;">
+        <img src="{{ url_for('static', filename='logo.png') }}" 
+             alt="SEO Score Logo"
+             style="height:50px; width:auto; object-fit:contain;">
+    </a>
+
+    <a href="/" style="text-decoration:none;">
+        <span style="color:white; font-size:26px; font-weight:700; letter-spacing:0.5px;">
+            SEO SCORE
+        </span>
+    </a>
 </div>
 
 
