@@ -179,8 +179,9 @@ tr:hover td {
 <div style="display:flex; align-items:center; gap:12px;">
     <a href="/" style="display:flex; align-items:center; text-decoration:none;">
         <img src="{{ url_for('static', filename='logo.png') }}" 
-             alt="SEO Score Logo"
-             style="height:50px; width:auto; object-fit:contain;">
+     style="height:50px; transition:0.3s; cursor:pointer;"
+     onmouseover="this.style.transform='scale(1.05)'"
+     onmouseout="this.style.transform='scale(1)'">
     </a>
 
     <a href="/" style="text-decoration:none;">
