@@ -178,24 +178,23 @@ tr:hover td {
     
 <div style="display:flex; justify-content:space-between; align-items:center; padding:15px 40px; background:#06183a;">
 
-    <!-- Logo (Text) -->
+    <!-- Logo -->
     <div>
         <a href="/" style="text-decoration:none;">
             <span style="font-size:34px; font-weight:800; letter-spacing:1px;">
-                <span style="color:#4da3ff;">SEO</span> 
+                <span style="color:#2563eb;">SEO</span> 
                 <span style="color:white;">SCORE</span>
             </span>
         </a>
     </div>
 
     <!-- Menu -->
-    <div style="display:flex; align-items:center; gap:25px;">
-        <a href="/" style="color:white; text-decoration:none; font-weight:500;">Home</a>
-        <a href="/about" style="color:white; text-decoration:none; font-weight:500;">About</a>
-        <a href="/contact" style="color:white; text-decoration:none; font-weight:500;">Contact</a>
+    <div style="display:flex; align-items:center; gap:30px; margin-left:40px;">
+        <a href="/" style="color:white; text-decoration:none;">Home</a>
+        <a href="/about" style="color:white; text-decoration:none;">About</a>
+        <a href="/contact" style="color:white; text-decoration:none;">Contact</a>
 
-        <!-- Button -->
-        <a href="/" style="background:#4da3ff; color:white; padding:8px 18px; border-radius:6px; text-decoration:none; font-weight:600;">
+        <a href="/" style="background:#2563eb; padding:8px 18px; border-radius:6px; color:white; text-decoration:none;">
             Analyze
         </a>
     </div>
