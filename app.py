@@ -186,7 +186,7 @@ tr:hover td {
     </div>
 
     <!-- Menu -->
-    <div style="display:flex; align-items:left; gap:30px; margin-left:20px;">
+    <div style="display:flex; align-items:centre; gap:30px; margin-left:200px;">
         <a href="/" style="color:white; text-decoration:none;">Home</a>
         <a href="/about" style="color:white; text-decoration:none;">About</a>
         <a href="/contact" style="color:white; text-decoration:none;">Contact</a>
