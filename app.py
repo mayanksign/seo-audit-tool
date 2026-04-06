@@ -176,14 +176,18 @@ tr:hover td {
 
 
     
-<div style="display:flex; align-items:center; height:50px; padding:0 30px;">
+<div style="display:flex; justify-content:space-between; align-items:center; padding:15px 40px; background:#06183a;">
 
-    <a href="/" style="display:flex; align-items:center; text-decoration:none;">
-    <img src="{{ url_for('static', filename='logo.png') }}" 
-     style="height:100px; width:auto;">
-    </a>
+    <!-- Logo (Text) -->
+    <div>
+        <a href="/" style="text-decoration:none;">
+            <span style="font-size:34px; font-weight:800; letter-spacing:1px;">
+                <span style="color:#4da3ff;">SEO</span> 
+                <span style="color:white;">SCORE</span>
+            </span>
+        </a>
+    </div>
 
-</div>
 
 
     <div>
