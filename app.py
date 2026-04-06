@@ -103,7 +103,7 @@ table {
     width: 100%;
     margin-top: 25px;
     border-collapse: collapse;
-    overflow: auto;
+    overflow: hidden;
     border-radius: 12px;
 }
 
