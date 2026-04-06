@@ -43,7 +43,7 @@ body {
     background: linear-gradient(135deg, #0f172a, #1e293b);
     font-family: 'Segoe UI', sans-serif;
     color: #fff;
-    padding: 90px 0 30px;
+    padding: 120px 0 30px;
 }
 
 .card {
@@ -53,7 +53,7 @@ body {
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 25px 60px rgba(0,0,0,0.6);
-    margin: 0 auto;
+    margin: 20px auto 0;
 }
 
 h1 {
@@ -162,7 +162,7 @@ tr:hover td {
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:15px 40px;
+    padding:10px 40px;
     background:#0f172a;
     color:white;
     position:fixed;
