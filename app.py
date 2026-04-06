@@ -176,17 +176,17 @@ tr:hover td {
 
 
     
-<div style="display:flex; align-items:center; gap:12px; height:60px;">
+<div style="display:flex; align-items:center; gap:12px; height:60px; overflow:hidden;">
 
     <a href="/" style="display:flex; align-items:center; text-decoration:none;">
         <img src="{{ url_for('static', filename='logo.png') }}" 
-             style="height:45px; width:auto; transition:0.3s; cursor:pointer;"
-             onmouseover="this.style.transform='scale(1.08)'"
-             onmouseout="this.style.transform='scale(1)'">
+             style="height:50px; transform:scale(1.4); transform-origin:left center; transition:0.3s; cursor:pointer;"
+             onmouseover="this.style.transform='scale(1.5)'"
+             onmouseout="this.style.transform='scale(1.4)'">
     </a>
 
     <a href="/" style="text-decoration:none;">
-        <span style="color:white; font-size:24px; font-weight:600; letter-spacing:0.5px;">
+        <span style="color:white; font-size:26px; font-weight:600; letter-spacing:0.5px;">
             SEO SCORE
         </span>
     </a>
