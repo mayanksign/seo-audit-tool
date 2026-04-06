@@ -188,13 +188,19 @@ tr:hover td {
         </a>
     </div>
 
+    <!-- Menu -->
+    <div style="display:flex; align-items:center; gap:25px;">
+        <a href="/" style="color:white; text-decoration:none; font-weight:500;">Home</a>
+        <a href="/about" style="color:white; text-decoration:none; font-weight:500;">About</a>
+        <a href="/contact" style="color:white; text-decoration:none; font-weight:500;">Contact</a>
 
-
-    <div>
-        <a href="/" style="margin-right:20px; color:white; text-decoration:none;">Home</a>
-        <a href="/about" style="margin-right:20px; color:white; text-decoration:none;">About</a>
-        <a href="/contact" style="color:white; text-decoration:none;">Contact</a>
+        <!-- Button -->
+        <a href="/" style="background:#4da3ff; color:white; padding:8px 18px; border-radius:6px; text-decoration:none; font-weight:600;">
+            Analyze
+        </a>
     </div>
+
+</div>
 
 </nav>
 
