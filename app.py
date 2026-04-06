@@ -176,12 +176,12 @@ tr:hover td {
 
 
     
-<div style="display:flex; justify-content:space-between; align-items:center; padding:8px 30px; background:#06183a;">
+<div style="display:flex; justify-content:space-between; align-items:center; padding:8px 30px; ">
 
     <!-- Logo -->
     <div>
         <a href="/" style="text-decoration:none;">
-            <span style="font-size:34px; font-weight:400; letter-spacing:1px;">
+            <span style="font-size:34px; font-weight:500; letter-spacing:1px;">
                 <span style="color:#2563eb;">SEO</span> 
                 <span style="color:white;">SCORE</span>
             </span>
