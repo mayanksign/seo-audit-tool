@@ -176,7 +176,7 @@ tr:hover td {
 
 
     
-<div style="display:flex; justify-content:space-between; align-items:center; padding:15px 40px; background:#06183a;">
+<div style="display:flex; justify-content:space-between; align-items:center; padding:8px 30px; background:#06183a;">
 
     <!-- Logo -->
     <div>
