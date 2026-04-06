@@ -176,7 +176,7 @@ tr:hover td {
 
 
     
-<div style="display:flex; align-items:center; height:80px; padding:0 30px; background:#06183a;">
+<div style="display:flex; align-items:center; height:80px; padding:0 30px;">
 
     <a href="/" style="display:flex; align-items:center; text-decoration:none;">
     <img src="{{ url_for('static', filename='logo.png') }}" 
