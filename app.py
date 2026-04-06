@@ -41,7 +41,7 @@ body
 
 
 {
-    min-height: 100vh;
+    overflow-x:hidden;
     background: linear-gradient(135deg, #0f172a, #1e293b);
     display: flex;
     justify-content: center;
@@ -103,7 +103,7 @@ table {
     width: 100%;
     margin-top: 25px;
     border-collapse: collapse;
-    overflow: hidden;
+    overflow: auto;
     border-radius: 12px;
 }
 
