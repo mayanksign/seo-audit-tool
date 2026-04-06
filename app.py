@@ -185,11 +185,7 @@ tr:hover td {
              onmouseout="this.style.transform='scale(1.4)'">
     </a>
 
-    <a href="/" style="text-decoration:none;">
-        <span style="color:white; font-size:20px; font-weight:400; letter-spacing:0.5px;">
-            SEO SCORE
-        </span>
-    </a>
+  
 
 </div>
 
