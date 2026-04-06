@@ -225,6 +225,7 @@ tr:hover td {
 </form>
 
 {% if results %}
+<div style="max-height:500px; overflow-y:auto; margin:20px 0;">
 <table>
     <tr>
         <th>Domain</th>
@@ -254,6 +255,7 @@ tr:hover td {
     </tr>
     {% endfor %}
 </table>
+</div>
 {% endif %}
 
 
