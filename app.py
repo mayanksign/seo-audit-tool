@@ -173,10 +173,15 @@ tr:hover td {
     left:0;
     z-index:1000;
 ">
+
+
     
-    <div style="font-weight:bold; font-size:18px;">
-        🚀 SEO SCORE
-    </div>
+<div style="display:flex; align-items:center; gap:10px;">
+    <img src="{{ url_for('static', filename='logo.png') }}" style="height:40px;">
+    <span style="font-weight:bold; font-size:18px;">SEO SCORE</span>
+</div>
+
+
 
     <div>
         <a href="/" style="margin-right:20px; color:white; text-decoration:none;">Home</a>
