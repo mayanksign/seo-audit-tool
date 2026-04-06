@@ -42,8 +42,6 @@ body
 
 {
    min-height:100vh;
-  
-overflow-x:hidden;
     background: linear-gradient(135deg, #0f172a, #1e293b);
     display: flex;
     justify-content: center;
