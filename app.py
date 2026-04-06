@@ -37,17 +37,13 @@ HTML = """
     box-sizing: border-box;
 }
 
-body 
-
-
-{
-   min-height:100vh;
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
     background: linear-gradient(135deg, #0f172a, #1e293b);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: 'Segoe UI', sans-serif;
     color: #fff;
+    padding: 90px 0 30px;
 }
 
 .card {
@@ -57,6 +53,7 @@ body
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+    margin: 0 auto;
 }
 
 h1 {
@@ -159,7 +156,7 @@ tr:hover td {
 </style>
 </head>
 
-
+<body>
 <nav style="
     width:100%;
     display:flex;
