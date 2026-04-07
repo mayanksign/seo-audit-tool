@@ -44,6 +44,7 @@ body {
     font-family: 'Segoe UI', sans-serif;
     color: #fff;
     padding: 150px 0 30px;
+    margin: 0;
 }
 
 .card {
@@ -125,10 +126,10 @@ tr:hover td {
 
 .main-footer {
     width: 100%;
-    background: #020617;
+    background: rgba(2, 6, 23, 0.95);
     padding: 22px 20px;
-    margin-top: 40px;
-    border-top: 1px solid #1f2937;
+    margin-top: 50px;
+    border-top: 1px solid rgba(255,255,255,0.08);
     text-align: center;
     color: #cbd5e1;
 }
