@@ -127,6 +127,9 @@ tr:hover td {
 
 .main-footer {
     width: 100%;
+    
+     margin-bottom: 0;
+     
     background: rgba(2, 6, 23, 0.95);
     padding: 22px 20px;
     border-top: 1px solid rgba(255,255,255,0.08);
