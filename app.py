@@ -47,8 +47,14 @@ body {
     background: linear-gradient(135deg, #0f172a, #1e293b);
     font-family: 'Segoe UI', sans-serif;
     color: #fff;
-    padding: 150px 0 0;
     margin: 0;
+}
+
+
+
+.page-wrap {
+    flex: 1;
+    padding: 150px 0 30px;
 }
 
 
@@ -292,6 +298,9 @@ tr:hover td {
 
 </nav>
 
+
+<div class="page-wrap">
+
 <div class="card">
 
 <h1>🚀 Free SEO Audit Tool</h1>
@@ -351,14 +360,15 @@ tr:hover td {
 
 </div>
 
+</div>
 
 <div class="main-footer">
     <p>© 2026 Free SEO Audit Tool | Built by Mayank</p>
-    <p>
+    <div class="footer-links">
         <a href="/privacy-policy">Privacy Policy</a>
-        |
+        <span>|</span>
         <a href="/terms-and-conditions">Terms & Conditions</a>
-    </p>
+    </div>
 </div>
 
 
