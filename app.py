@@ -126,26 +126,30 @@ tr:hover td {
 .main-footer {
     width: 100%;
     background: #020617;
-    padding: 25px 15px;
-    text-align: center;
-    color: #94a3b8;
+    padding: 22px 20px;
     margin-top: 40px;
     border-top: 1px solid #1f2937;
+    text-align: center;
+    color: #cbd5e1;
 }
 
 .main-footer p {
-    margin: 0;
+    margin: 0 0 10px 0;
     font-size: 14px;
+    color: #cbd5e1;
 }
 
 .footer-links {
-    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
 }
 
 .footer-links a {
     color: #38bdf8;
     text-decoration: none;
-    margin: 0 12px;
     font-size: 14px;
 }
 
