@@ -316,7 +316,7 @@ tr:hover td {
 </form>
 
 {% if results %}
-<div style="max-height:500px; overflow-y:auto; margin:20px 40px 0;">
+<div style="max-height:500px; overflow-y:auto; margin:20px 40px 0; padding-bottom:80px;">
 <table>
     <tr>
         <th>Domain</th>
