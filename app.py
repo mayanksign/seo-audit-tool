@@ -122,38 +122,34 @@ tr:hover td {
     background: #111827;
 }
 
-.footer {
-    margin-top: 20px;
-    text-align: center;
-    opacity: 0.6;
-    font-size: 13px;
-}
 
-
-.site-footer {
+.main-footer {
     width: 100%;
-    margin-top: 40px;
-    padding: 25px 20px;
-    background: #0b1220;
-    border-top: 1px solid #1f2937;
+    background: #020617;
+    padding: 25px 15px;
     text-align: center;
-    color: #cbd5e1;
-    border-radius: 0 0 20px 20px;
+    color: #94a3b8;
+    margin-top: 40px;
+    border-top: 1px solid #1f2937;
 }
 
-.site-footer p {
-    margin: 8px 0;
+.main-footer p {
+    margin: 0;
     font-size: 14px;
 }
 
-.site-footer a {
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
     color: #38bdf8;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 12px;
     font-size: 14px;
 }
 
-.site-footer a:hover {
+.footer-links a:hover {
     color: #60a5fa;
     text-decoration: underline;
 }
@@ -283,6 +279,9 @@ tr:hover td {
 
 
 
+</div>
+
+
 <div class="site-footer">
     <p>© 2026 Free SEO Audit Tool | Built by Mayank</p>
     <p>
@@ -294,7 +293,6 @@ tr:hover td {
 
 
 
-</div>
 
 
 </body>
