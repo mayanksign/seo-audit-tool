@@ -287,7 +287,7 @@ tr:hover td {
 </div>
 
 
-<div class="site-footer">
+<div class="main-footer">
     <p>© 2026 Free SEO Audit Tool | Built by Mayank</p>
     <p>
         <a href="/privacy-policy">Privacy Policy</a>
