@@ -51,7 +51,7 @@ body {
 
 .card {
     flex: 1
-    width: calc(100% - 32px);
+    width: calc(100% - 24px);
     max-width: 1100px;
     background: #111827;
     padding: 30px;
