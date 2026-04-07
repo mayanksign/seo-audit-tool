@@ -237,6 +237,10 @@ tr:hover td {
         padding: 6px 10px;
     }
 
+.page-wrap {
+    padding: 110px 0 20px;
+}
+
     .main-footer {
         padding: 14px 10px;
     }
