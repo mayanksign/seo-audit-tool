@@ -126,14 +126,9 @@ tr:hover td {
 }
 
 
-.main-footer {
-    width: 100%;
-    background: rgba(2, 6, 23, 0.95);
-    padding: 22px 20px;
-    border-top: 1px solid rgba(255,255,255,0.08);
-    text-align: center;
-    color: #cbd5e1;
-}
+
+
+
 
 .main-footer {
     width: 100%;
