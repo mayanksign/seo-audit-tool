@@ -39,7 +39,8 @@ HTML = """
 
 body {
     min-height: 100vh;
-    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(135deg, #0f172a, #1e293b);
     font-family: 'Segoe UI', sans-serif;
     color: #fff;
@@ -55,7 +56,7 @@ body {
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 25px 60px rgba(0,0,0,0.6);
-    margin: 20px auto 0;
+    margin: 20px auto 40px;
 }
 
 h1 {
@@ -127,9 +128,6 @@ tr:hover td {
 
 .main-footer {
     width: 100%;
-    
-     margin-bottom: 0;
-     
     background: rgba(2, 6, 23, 0.95);
     padding: 22px 20px;
     border-top: 1px solid rgba(255,255,255,0.08);
@@ -137,10 +135,14 @@ tr:hover td {
     color: #cbd5e1;
 }
 
-.main-footer p {
-    margin: 0 0 10px 0;
-    font-size: 14px;
+.main-footer {
+    width: 100%;
+    background: #020617;
+    padding: 22px 20px;
+    text-align: center;
     color: #cbd5e1;
+    border-top: 1px solid #1f2937;
+    margin-top: auto;
 }
 
 .footer-links {
