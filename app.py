@@ -130,6 +130,37 @@ tr:hover td {
 }
 
 
+.site-footer {
+    width: 100%;
+    margin-top: 40px;
+    padding: 25px 20px;
+    background: #0b1220;
+    border-top: 1px solid #1f2937;
+    text-align: center;
+    color: #cbd5e1;
+    border-radius: 0 0 20px 20px;
+}
+
+.site-footer p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.site-footer a {
+    color: #38bdf8;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.site-footer a:hover {
+    color: #60a5fa;
+    text-decoration: underline;
+}
+
+
+
+
 .subheading {
   font-size: 16px;
   color: #cbd5e1; /* light grey */
@@ -251,9 +282,17 @@ tr:hover td {
 {% endif %}
 
 
-<div class="footer">
-    Built By Mayank | SEO Automation Tool
+
+<div class="site-footer">
+    <p>© 2026 Free SEO Audit Tool | Built by Mayank</p>
+    <p>
+        <a href="/privacy-policy">Privacy Policy</a>
+        |
+        <a href="/terms-and-conditions">Terms & Conditions</a>
+    </p>
 </div>
+
+
 
 </div>
 
