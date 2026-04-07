@@ -198,7 +198,7 @@ tr:hover td {
 
 @media (max-width: 768px) {
     body {
-        padding: 90px 0 80px;
+        padding: 110px 0 80px;
     }
 
     .card {
