@@ -136,14 +136,11 @@ tr:hover td {
 .main-footer {
     width: 100%;
     background: #020617;
-    padding: 15px;
+    padding: 22px 20px;
     text-align: center;
     color: #cbd5e1;
     border-top: 1px solid #1f2937;
-
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    margin-top: 40px;
 }
 
 
@@ -316,7 +313,7 @@ tr:hover td {
 </form>
 
 {% if results %}
-<div style="max-height:500px; overflow-y:auto; margin:20px 40px 0; padding-bottom:100px;">
+<div style="max-height:500px; overflow-y:auto; margin:20px 30px 0;">
 <table>
     <tr>
         <th>Domain</th>
