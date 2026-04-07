@@ -37,16 +37,17 @@ HTML = """
     box-sizing: border-box;
 }
 
+
 body {
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    overflow-x: hidden;
     background: linear-gradient(135deg, #0f172a, #1e293b);
     font-family: 'Segoe UI', sans-serif;
     color: #fff;
-    padding: 150px 0 0;
+    padding: 150px 0 80px;  
     margin: 0;
 }
+
 
 .card {
     flex: 1
@@ -128,17 +129,20 @@ tr:hover td {
 
 
 
-
-
 .main-footer {
     width: 100%;
     background: #020617;
-    padding: 30px 20px;
+    padding: 15px;
     text-align: center;
     color: #cbd5e1;
     border-top: 1px solid #1f2937;
-    margin-top: auto;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
+
+
 
 .footer-links {
     display: flex;
