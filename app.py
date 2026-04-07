@@ -39,6 +39,8 @@ HTML = """
 
 body {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     overflow-x: hidden;
     background: linear-gradient(135deg, #0f172a, #1e293b);
     font-family: 'Segoe UI', sans-serif;
