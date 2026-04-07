@@ -42,11 +42,12 @@ HTML = """
 
 body {
     min-height: 100vh;
-    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(135deg, #0f172a, #1e293b);
     font-family: 'Segoe UI', sans-serif;
     color: #fff;
-    padding: 150px 0 0px;  
+    padding: 150px 0 0;
     margin: 0;
 }
 
