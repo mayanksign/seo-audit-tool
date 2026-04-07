@@ -140,7 +140,7 @@ tr:hover td {
     text-align: center;
     color: #cbd5e1;
     border-top: 1px solid #1f2937;
-    margin-top: 40px;
+  
 }
 
 
