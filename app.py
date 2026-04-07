@@ -26,6 +26,8 @@ HTML = """
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Free SEO Audit Tool Online | Check Website SEO Score Instantly</title>
 
   <meta name="description" content="Analyze your website SEO instantly with our free SEO audit tool. Get detailed reports, errors, and suggestions without signup.">
@@ -50,24 +52,15 @@ body {
 
 
 .card {
-    flex: 1
-    width: calc(100% - 24px);
+    width: 95%;
     max-width: 1100px;
     background: #111827;
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 25px 60px rgba(0,0,0,0.6);
-    margin: 20px auto 0px;
+    margin: 20px auto 0;
 }
 
-
-@media (max-width: 768px) {
-    .card {
-        margin: 15px 12px 0 12px;
-        padding: 20px 16px;
-        border-radius: 16px;
-    }
-}
 
 
 
@@ -199,6 +192,65 @@ tr:hover td {
   font-size: 13px;
   color: #fff;
 }
+
+
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 90px 0 80px;
+    }
+
+    .card {
+        width: calc(100% - 24px);
+        padding: 18px;
+        margin: 12px auto 0;
+        border-radius: 16px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .subheading {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    textarea {
+        height: 110px;
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 15px;
+        padding: 13px;
+    }
+
+    .trust-lines p {
+        font-size: 12px;
+        margin: 4px;
+        padding: 6px 10px;
+    }
+
+    .main-footer {
+        padding: 14px 10px;
+    }
+
+    .main-footer p,
+    .footer-links a,
+    .footer-links span {
+        font-size: 13px;
+    }
+
+    nav {
+        padding: 10px 14px !important;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+
 
 </style>
 </head>
