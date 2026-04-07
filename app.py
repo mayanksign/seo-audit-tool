@@ -60,6 +60,17 @@ body {
     margin: 20px auto 0px;
 }
 
+
+@media (max-width: 768px) {
+    .card {
+        margin: 15px 12px 0 12px;
+        padding: 20px 16px;
+        border-radius: 16px;
+    }
+}
+
+
+
 h1 {
     font-size: 28px;
     margin-bottom: 20px;
