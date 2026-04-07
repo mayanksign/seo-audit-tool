@@ -56,7 +56,7 @@ body {
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 25px 60px rgba(0,0,0,0.6);
-    margin: 20px auto 40px;
+    margin: 20px auto 0px;
 }
 
 h1 {
@@ -138,7 +138,7 @@ tr:hover td {
 .main-footer {
     width: 100%;
     background: #020617;
-    padding: 22px 20px;
+    padding: 40px 20px;
     text-align: center;
     color: #cbd5e1;
     border-top: 1px solid #1f2937;
