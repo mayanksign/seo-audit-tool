@@ -143,7 +143,7 @@ tr:hover td {
 .main-footer {
     width: 100%;
     background: #020617;
-    padding: 22px 20px;
+    padding: 30px 20px;
     text-align: center;
     color: #cbd5e1;
     border-top: 1px solid #1f2937;
