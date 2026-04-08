@@ -54,7 +54,7 @@ body {
 
 .page-wrap {
     flex: 1;
-    padding: 150px 0 30px;
+    padding: 150px 0 60px;
 }
 
 
