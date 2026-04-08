@@ -65,7 +65,7 @@ body {
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 25px 60px rgba(0,0,0,0.6);
-    margin: 20px auto 0;
+    margin: 20px auto 60;
 }
 
 
