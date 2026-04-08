@@ -406,7 +406,7 @@ def contact():
 def blog():
     return render_template('blog.html')
 
-@app.route('/privacy-policy')
+@app.route('/privacy')
 def privacy():
     return render_template('privacy.html')
 
