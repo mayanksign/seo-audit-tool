@@ -304,8 +304,8 @@ tr:hover td {
         <a href="/about" style="color:white; text-decoration:none;">About</a>
         <a href="/contact" style="color:white; text-decoration:none;">Contact</a>
 
-        <a href="/" style="background:#2563eb; padding:8px 18px; border-radius:6px; color:white; text-decoration:none;">
-            Analyze
+        <a href="/blog" style="background:#2563eb; padding:8px 18px; border-radius:6px; color:white; text-decoration:none;">
+            Blog
         </a>
     </div>
 
