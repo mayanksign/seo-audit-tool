@@ -410,7 +410,6 @@ def blog():
 
 
 
-
 @app.route('/privacy-policy')
 def privacy():
     return render_template('privacy.html')
