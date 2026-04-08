@@ -1,5 +1,8 @@
 from flask import Flask, request, render_template, render_template_string, send_from_directory
 import requests, socket
+
+import os
+
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse, urljoin
 
@@ -497,4 +500,5 @@ def home():
     return render_template_string(HTML, results=results)
 
 if __name__ == "__main__":
-   app.run(host="0.0.0.0", port=10000)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 10000)))
+
