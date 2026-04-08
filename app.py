@@ -380,7 +380,7 @@ tr:hover td {
     <div class="footer-links">
         <a href="/privacy-policy">Privacy Policy</a>
         <span>|</span>
-        <a href="/terms-and-conditions">Terms & Conditions</a>
+        <a href="/terms">Terms & Conditions</a>
     </div>
 </div>
 
@@ -406,6 +406,11 @@ def contact():
 @app.route('/privacy-policy')
 def privacy():
     return render_template('privacy.html')
+
+
+@app.route('/terms')
+def terms():
+    return render_template('terms.html')
 
 
 
