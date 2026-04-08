@@ -381,7 +381,7 @@ tr:hover td {
 <div class="main-footer">
     <p>© 2026 Free SEO Audit Tool | Built by Mayank</p>
     <div class="footer-links">
-        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/privacy">Privacy Policy</a>
         <span>|</span>
         <a href="/terms">Terms & Conditions</a>
     </div>
