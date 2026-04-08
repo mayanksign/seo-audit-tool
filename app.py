@@ -201,9 +201,18 @@ tr:hover td {
 
 
 @media (max-width: 768px) {
-    body {
-        padding: 110px 0 80px;
+
+ body {
+        padding: 0;
     }
+
+    .page-wrap {
+        flex: 1;
+        padding: 110px 0 20px;
+    }
+
+
+    
 
     .card {
         width: calc(100% - 24px);
