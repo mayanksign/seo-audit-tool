@@ -403,6 +403,10 @@ def about():
 def contact():
     return render_template('contact.html')
 
+@app.route('/privacy')
+def contact():
+    return render_template('privacy.html')
+
 
 
 @app.route('/robots.txt')
