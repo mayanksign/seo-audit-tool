@@ -405,7 +405,7 @@ def contact():
 
 
 @app.route('/blog')
-def contact():
+def blog():
     return render_template('blog.html')
 
 
