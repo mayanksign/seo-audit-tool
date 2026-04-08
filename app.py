@@ -403,6 +403,12 @@ def about():
 def contact():
     return render_template('contact.html')
 
+
+@app.route('/blog')
+def blog():
+    return render_template('blog.html')
+
+
 @app.route('/privacy-policy')
 def privacy():
     return render_template('privacy.html')
