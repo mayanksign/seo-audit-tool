@@ -16,13 +16,16 @@
       box-sizing: border-box;
     }
 
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%);
-      color: #0f172a;
-      line-height: 1.6;
-     
-    }
+  body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%);
+  font-family: 'Segoe UI', sans-serif;
+  color: #0f172a;
+  line-height: 1.6;
+  margin: 0;
+}
 
     
     a {
@@ -31,6 +34,7 @@
 
     .blog-page {
       min-height: 100vh;
+       flex: 1;
       padding: 40px 20px 60px;
       margin-top: 80px;
     }
