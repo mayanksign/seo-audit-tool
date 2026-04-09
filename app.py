@@ -409,6 +409,21 @@ def contact():
 def blog():
     return render_template('blog.html')
 
+
+@app.route('/blog/free-seo-audit-tool')
+def blog1():
+    return render_template('blog1.html')
+
+@app.route('/blog/seo-tips-for-beginners')
+def blog2():
+    return render_template('blog2.html')
+
+
+
+
+
+
+
 @app.route('/privacy')
 def privacy():
     return render_template('privacy.html')
