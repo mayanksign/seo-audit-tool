@@ -1,107 +1,504 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SEO Blog | Free SEO Audit</title>
-  <meta name="description" content="Read our latest SEO blogs, tips, and website audit guides to improve your rankings.">
+  <meta
+    name="description"
+    content="Read SEO tips, website audit guides, and ranking improvement strategies on Free SEO Audit Blog."
+  />
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f8fafc;
+    * {
       margin: 0;
       padding: 0;
-      color: #1e293b;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%);
+      color: #0f172a;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .navbar {
+      width: 100%;
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 14px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+    }
+
+    .nav-container {
+      max-width: 1180px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo a {
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .logo span {
+      color: #38bdf8;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: #e2e8f0;
+      font-size: 15px;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #38bdf8;
+    }
+
+    .blog-page {
+      min-height: 100vh;
+      padding: 40px 20px 60px;
     }
 
     .container {
-      max-width: 1100px;
-      margin: 40px auto;
-      padding: 20px;
+      max-width: 1180px;
+      margin: 0 auto;
     }
 
-    h1 {
+    .hero {
       text-align: center;
-      margin-bottom: 10px;
+      padding: 30px 20px 20px;
+      margin-bottom: 35px;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: #dbeafe;
+      color: #1d4ed8;
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      font-weight: 700;
       color: #0f172a;
+      margin-bottom: 14px;
+      line-height: 1.2;
     }
 
-    .subtext {
-      text-align: center;
+    .hero p {
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 18px;
+      color: #475569;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+      padding: 18px 22px;
+      background: rgba(255, 255, 255, 0.78);
+      backdrop-filter: blur(10px);
+      border: 1px solid #dbeafe;
+      border-radius: 18px;
+      box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06);
+    }
+
+    .top-bar-left h2 {
+      font-size: 24px;
+      color: #0f172a;
+      margin-bottom: 4px;
+    }
+
+    .top-bar-left p {
       color: #64748b;
-      margin-bottom: 40px;
+      font-size: 15px;
+    }
+
+    .tool-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: #ffffff;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.3s ease;
+      box-shadow: 0 8px 18px rgba(37, 99, 235, 0.22);
+    }
+
+    .tool-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px rgba(37, 99, 235, 0.28);
     }
 
     .blog-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
     }
 
     .blog-card {
-      background: #fff;
-      border-radius: 14px;
-      padding: 20px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-      transition: 0.3s ease;
+      background: #ffffff;
+      border-radius: 22px;
+      overflow: hidden;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      transition: 0.35s ease;
     }
 
     .blog-card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-8px);
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.14);
     }
 
-    .blog-card h2 {
-      font-size: 20px;
-      margin-bottom: 10px;
+    .card-image {
+      width: 100%;
+      height: 210px;
+      overflow: hidden;
+      background: #dbeafe;
+    }
+
+    .card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .blog-card:hover .card-image img {
+      transform: scale(1.06);
+    }
+
+    .card-content {
+      padding: 22px;
+    }
+
+    .blog-tag {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: bold;
+      color: #1d4ed8;
+      background: #eff6ff;
+      padding: 7px 12px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+
+    .blog-card h3 {
+      font-size: 22px;
       color: #0f172a;
+      margin-bottom: 12px;
+      line-height: 1.35;
     }
 
     .blog-card p {
-      font-size: 15px;
       color: #475569;
-      margin-bottom: 18px;
-      line-height: 1.6;
+      font-size: 15px;
+      margin-bottom: 22px;
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
     }
 
     .read-btn {
       display: inline-block;
-      text-decoration: none;
-      background: #2563eb;
-      color: white;
-      padding: 10px 16px;
-      border-radius: 8px;
+      background: #0f172a;
+      color: #ffffff;
+      padding: 11px 18px;
+      border-radius: 10px;
       font-weight: bold;
+      transition: 0.3s ease;
     }
 
     .read-btn:hover {
-      background: #1d4ed8;
+      background: #1e293b;
+    }
+
+    .read-time {
+      font-size: 14px;
+      color: #64748b;
+      font-weight: 600;
+    }
+
+    .bottom-cta {
+      margin-top: 48px;
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+      border-radius: 24px;
+      padding: 40px 28px;
+      text-align: center;
+      color: #ffffff;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
+    }
+
+    .bottom-cta h2 {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .bottom-cta p {
+      max-width: 720px;
+      margin: 0 auto 20px;
+      color: #dbeafe;
+      font-size: 16px;
+    }
+
+    .bottom-cta a {
+      display: inline-block;
+      background: #ffffff;
+      color: #1d4ed8;
+      padding: 12px 22px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .bottom-cta a:hover {
+      transform: translateY(-2px);
+    }
+
+    .main-footer {
+      width: 100%;
+      background: #020617;
+      padding: 28px 20px;
+      text-align: center;
+      color: #cbd5e1;
+      border-top: 1px solid #1f2937;
+      margin-top: 50px;
+    }
+
+    .footer-links {
+      margin-top: 12px;
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: #38bdf8;
+      font-size: 14px;
+    }
+
+    .footer-links a:hover {
+      color: #7dd3fc;
+    }
+
+    @media (max-width: 768px) {
+      .blog-page {
+        padding: 28px 14px 45px;
+      }
+
+      .hero h1 {
+        font-size: 30px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .top-bar {
+        padding: 16px;
+      }
+
+      .top-bar-left h2 {
+        font-size: 20px;
+      }
+
+      .blog-card h3 {
+        font-size: 20px;
+      }
+
+      .bottom-cta h2 {
+        font-size: 24px;
+      }
+
+      .bottom-cta {
+        padding: 30px 18px;
+      }
+
+      .card-image {
+        height: 190px;
+      }
+
+      .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <h1>Our SEO Blog</h1>
-    <p class="subtext">Read useful SEO tips, website audit guides, and ranking improvement strategies.</p>
-
-    <div class="blog-grid">
-      <div class="blog-card">
-        <h2>Free SEO Audit Tool Guide</h2>
-        <p>Learn how to check your website SEO score instantly and fix common SEO issues.</p>
-        <a href="/blog/free-seo-audit-tool" class="read-btn">Read More</a>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="/">SEO <span>SCORE</span></a>
       </div>
 
-      <div class="blog-card">
-        <h2>SEO Tips for Beginners</h2>
-        <p>Simple and practical SEO tips every beginner should know to improve rankings.</p>
-        <a href="/blog/seo-tips-for-beginners" class="read-btn">Read More</a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/blog" class="active">Blog</a>
+        <a href="/contact">Contact</a>
       </div>
+    </div>
+  </nav>
 
-     
+  <div class="blog-page">
+    <div class="container">
 
+      <section class="hero">
+        <span class="hero-badge">SEO Tips & Guides</span>
+        <h1>Welcome to Our SEO Blog</h1>
+        <p>
+          Explore practical SEO tips, website audit guides, and ranking strategies
+          to grow your traffic and improve your website performance.
+        </p>
+      </section>
+
+      <section class="top-bar">
+        <div class="top-bar-left">
+          <h2>Latest Blog Articles</h2>
+          <p>Read useful content and learn how to improve your website SEO step by step.</p>
+        </div>
+        <a href="/" class="tool-btn">Check SEO Score</a>
+      </section>
+
+      <section class="blog-grid">
+
+        <div class="blog-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80" alt="SEO audit dashboard on laptop screen">
+          </div>
+          <div class="card-content">
+            <span class="blog-tag">SEO Audit</span>
+            <h3>Free SEO Audit Tool: Check Your Website SEO Score Instantly</h3>
+            <p>
+              Learn how to analyze your website SEO score, find issues, and improve
+              your rankings with a free SEO audit tool.
+            </p>
+            <div class="card-footer">
+              <a href="/blog/free-seo-audit-tool" class="read-btn">Read Article</a>
+              <span class="read-time">5 min read</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=1200&q=80" alt="Person learning SEO on laptop">
+          </div>
+          <div class="card-content">
+            <span class="blog-tag">Beginner SEO</span>
+            <h3>SEO Tips for Beginners: Simple Ways to Improve Rankings</h3>
+            <p>
+              Discover beginner-friendly SEO tips that can help you optimize your
+              website and get better visibility on Google.
+            </p>
+            <div class="card-footer">
+              <a href="/blog/seo-tips-for-beginners" class="read-btn">Read Article</a>
+              <span class="read-time">4 min read</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" alt="Website analytics and SEO improvement chart">
+          </div>
+          <div class="card-content">
+            <span class="blog-tag">SEO Score</span>
+            <h3>How to Improve Website SEO Score with Easy Fixes</h3>
+            <p>
+              Find out how to improve your website SEO score by optimizing titles,
+              headings, speed, mobile usability, and more.
+            </p>
+            <div class="card-footer">
+              <a href="/blog/improve-website-seo-score" class="read-btn">Read Article</a>
+              <span class="read-time">6 min read</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80" alt="On-page SEO checklist and digital marketing notes">
+          </div>
+          <div class="card-content">
+            <span class="blog-tag">On-Page SEO</span>
+            <h3>On-Page SEO Checklist for Better Rankings and More Traffic</h3>
+            <p>
+              Use this practical on-page SEO checklist to optimize content, headings,
+              meta tags, images, and internal links.
+            </p>
+            <div class="card-footer">
+              <a href="/blog/on-page-seo-checklist" class="read-btn">Read Article</a>
+              <span class="read-time">5 min read</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="bottom-cta">
+        <h2>Want to Analyze Your Website?</h2>
+        <p>
+          Use our free SEO audit tool to check your website SEO score instantly and
+          discover the issues affecting your search rankings.
+        </p>
+        <a href="/">Analyze Your Website Now</a>
+      </section>
 
     </div>
   </div>
+
+  <footer class="main-footer">
+    <p>© 2026 Free SEO Audit. All rights reserved.</p>
+    <div class="footer-links">
+     
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms & Conditions</a>
+    </div>
+  </footer>
 
 </body>
 </html>
