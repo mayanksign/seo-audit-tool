@@ -27,55 +27,6 @@
       text-decoration: none;
     }
 
-    .navbar {
-      width: 100%;
-      background: rgba(15, 23, 42, 0.95);
-      backdrop-filter: blur(10px);
-      padding: 14px 20px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
-    }
-
-    .nav-container {
-      max-width: 1180px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .logo a {
-      color: #ffffff;
-      font-size: 24px;
-      font-weight: 700;
-    }
-
-    .logo span {
-      color: #38bdf8;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 18px;
-      flex-wrap: wrap;
-    }
-
-    .nav-links a {
-      color: #e2e8f0;
-      font-size: 15px;
-      font-weight: 600;
-      transition: 0.3s ease;
-    }
-
-    .nav-links a:hover,
-    .nav-links a.active {
-      color: #38bdf8;
-    }
-
     .blog-page {
       min-height: 100vh;
       padding: 40px 20px 60px;
@@ -295,33 +246,35 @@
     .main-footer {
       width: 100%;
       background: #020617;
-      padding: 28px 20px;
+      padding: 30px 20px;
       text-align: center;
       color: #cbd5e1;
       border-top: 1px solid #1f2937;
-      margin-top: 50px;
     }
 
     .footer-links {
-      margin-top: 12px;
       display: flex;
       justify-content: center;
-      gap: 18px;
+      align-items: center;
+      gap: 14px;
       flex-wrap: wrap;
     }
 
     .footer-links a {
       color: #38bdf8;
+      text-decoration: none;
       font-size: 14px;
     }
 
     .footer-links a:hover {
-      color: #7dd3fc;
+      color: #60a5fa;
+      text-decoration: underline;
     }
 
     @media (max-width: 768px) {
       .blog-page {
         padding: 28px 14px 45px;
+        margin-top: 76px;
       }
 
       .hero h1 {
@@ -356,68 +309,50 @@
         height: 190px;
       }
 
-      .nav-container {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .nav-links {
-        width: 100%;
+      nav {
+        padding: 10px 14px !important;
+        flex-wrap: wrap;
+        gap: 10px;
       }
     }
   </style>
 </head>
 <body>
 
+  <nav style="
+      width:100%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:10px 40px;
+      background:#0f172a;
+      color:white;
+      position:fixed;
+      top:0;
+      left:0;
+      z-index:1000;
+  ">
 
+      <div>
+          <a href="/" style="text-decoration:none;">
+              <span style="font-size:25px; font-weight:500; letter-spacing:1px;">
+                  <span style="color:#2563eb;">SEO</span>
+                  <span style="color:#cbd5e1;">SCORE</span>
+              </span>
+          </a>
+      </div>
 
+      <div style="display:flex; align-items:center; gap:30px;">
+          <a href="/" style="color:white; text-decoration:none;">Home</a>
+          <a href="/about" style="color:white; text-decoration:none;">About</a>
+          <a href="/contact" style="color:white; text-decoration:none;">Contact</a>
 
-<nav style="
-    width:100%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:10px 40px;
-    background:#0f172a;
-    color:white;
-    position:fixed;
-    top:0;
-    left:0;
-    z-index:1000;
-">
+          <a href="/blog" style="background:#2563eb; padding:8px 18px; border-radius:6px; color:white; text-decoration:none;">
+              Blog
+          </a>
+      </div>
+  </nav>
 
-    <!-- Logo -->
-    <div>
-        <a href="/" style="text-decoration:none;">
-            <span style="font-size:25px; font-weight:500; letter-spacing:1px;">
-                <span style="color:#2563eb;">SEO</span> 
-                <span style="color:#cbd5e1;">SCORE</span>
-            </span>
-        </a>
-    </div>
-
-    <!-- Menu -->
-    <div style="display:flex; align-items:center; gap:30px;">
-        <a href="/" style="color:white; text-decoration:none;">Home</a>
-        <a href="/about" style="color:white; text-decoration:none;">About</a>
-        <a href="/contact" style="color:white; text-decoration:none;">Contact</a>
-
-        <a href="/blog" style="background:#2563eb; padding:8px 18px; border-radius:6px; color:white; text-decoration:none;">
-            Blog
-        </a>
-    </div>
-
-</nav>
-
-  
-
-
-
-
-
-
-
-  
   <div class="blog-page">
     <div class="container">
 
@@ -527,10 +462,10 @@
   </div>
 
   <footer class="main-footer">
-    <p>© 2026 Free SEO Audit. All rights reserved.</p>
+    <p>© 2026 Free SEO Audit Tool | Built by Mayank</p>
     <div class="footer-links">
-     
       <a href="/privacy">Privacy Policy</a>
+      <span>|</span>
       <a href="/terms">Terms & Conditions</a>
     </div>
   </footer>
