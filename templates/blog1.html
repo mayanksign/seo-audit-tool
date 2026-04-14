@@ -20,12 +20,17 @@
             box-sizing: border-box;
         }
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #0f172a;
-            color: #e2e8f0;
-            line-height: 1.6;
-        }
+      body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%);
+  font-family: 'Segoe UI', sans-serif;
+  color: #0f172a;
+  line-height: 1.6;
+  margin: 0;
+}
+
 
         .navbar {
    padding: 10px 14px !important;
@@ -215,6 +220,24 @@
     </style>
 </head>
 <body>
+
+
+
+
+  <nav style="
+      width:100%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:10px 40px;
+      background:#0f172a;
+      color:white;
+      position:fixed;
+      top:0;
+      left:0;
+      z-index:1000;
+  ">
+    
 
     <!-- Navbar -->
     <div class="navbar">
