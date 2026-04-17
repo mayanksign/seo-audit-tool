@@ -1,13 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SEO Tips for Beginners</title>
-  <meta name="description" content="Simple SEO tips for beginners to improve website ranking.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>SEO Tips for Beginners: Simple Ways to Improve Rankings</title>
+  <meta
+    name="description"
+    content="Learn simple SEO tips for beginners to improve website rankings. Use free SEO audit tools and check your SEO score easily"
+  />
+  <meta
+    name="keywords"
+    content="free seo audit, seo guide, check free seo score, seo tips for beginners"
+  />
+  <meta name="robots" content="index, follow" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%);
+      font-family: 'Segoe UI', sans-serif;
+      color: #0f172a;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .blog-page {
+      min-height: 100vh;
+      flex: 1;
+      padding: 150px 0 80px;
+      margin-top: 40px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .blog-article {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(10px);
+      border: 1px solid #dbeafe;
+      border-radius: 24px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      padding: 40px 30px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #dbeafe;
+      color: #1d4ed8;
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    .blog-article h1 {
+      font-size: 38px;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 18px;
+      line-height: 1.25;
+    }
+
+    .intro {
+      font-size: 18px;
+      color: #475569;
+      margin-bottom: 24px;
+    }
+
+    .blog-article h2 {
+      font-size: 28px;
+      color: #0f172a;
+      margin-top: 34px;
+      margin-bottom: 14px;
+    }
+
+    .blog-article h3 {
+      font-size: 22px;
+      color: #1d4ed8;
+      margin-top: 24px;
+      margin-bottom: 10px;
+    }
+
+    .blog-article p {
+      font-size: 17px;
+      color: #334155;
+      margin-bottom: 16px;
+    }
+
+    .blog-article ul {
+      margin: 0 0 18px 22px;
+    }
+
+    .blog-article ul li {
+      margin-bottom: 10px;
+      color: #334155;
+      font-size: 16px;
+    }
+
+    .highlight-box {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-left: 5px solid #2563eb;
+      border-radius: 16px;
+      padding: 18px 20px;
+      margin: 24px 0;
+    }
+
+    .highlight-box p {
+      margin: 0;
+      color: #1e3a8a;
+      font-weight: 500;
+    }
+
+    .cta-box {
+      margin: 34px 0;
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+      border-radius: 22px;
+      padding: 34px 24px;
+      text-align: center;
+      color: #ffffff;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
+    }
+
+    .cta-box h3 {
+      color: #ffffff;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .cta-box p {
+      color: #dbeafe;
+      max-width: 650px;
+      margin: 0 auto 18px;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: #ffffff;
+      color: #1d4ed8;
+      padding: 12px 22px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .faq-box {
+      margin-top: 28px;
+      padding: 22px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 18px;
+    }
+
+    .faq-box h2 {
+      margin-top: 0;
+    }
+
+    .main-footer {
+      width: 100%;
+      background: #020617;
+      padding: 30px 20px;
+      text-align: center;
+      color: #cbd5e1;
+      border-top: 1px solid #1f2937;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .footer-links a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .footer-links a:hover {
+      color: #60a5fa;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .blog-page {
+        padding: 28px 14px 45px;
+        margin-top: 76px;
+        flex: 1;
+      }
+
+      .blog-article {
+        padding: 26px 18px;
+        border-radius: 18px;
+      }
+
+      .blog-article h1 {
+        font-size: 30px;
+      }
+
+      .blog-article h2 {
+        font-size: 24px;
+      }
+
+      .blog-article h3 {
+        font-size: 20px;
+      }
+
+      .intro,
+      .blog-article p,
+      .blog-article ul li {
+        font-size: 16px;
+      }
+
+      .cta-box h3 {
+        font-size: 24px;
+      }
+
+      nav {
+        padding: 10px 14px !important;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>SEO Tips for Beginners</h1>
-  <p>This is the second blog page.</p>
+
+  <!-- EXACT SAME NAVBAR -->
+  <nav style="
+      width:100%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:10px 40px;
+      background:#0f172a;
+      color:white;
+      position:fixed;
+      top:0;
+      left:0;
+      z-index:1000;
+  ">
+
+      <div>
+          <a href="/" style="text-decoration:none;">
+              <span style="font-size:25px; font-weight:500; letter-spacing:1px;">
+                  <span style="color:#2563eb;">SEO</span>
+                  <span style="color:#cbd5e1;">SCORE</span>
+              </span>
+          </a>
+      </div>
+
+      <div style="display:flex; align-items:center; gap:30px;">
+          <a href="/" style="color:white; text-decoration:none;">Home</a>
+          <a href="/about" style="color:white; text-decoration:none;">About</a>
+          <a href="/contact" style="color:white; text-decoration:none;">Contact</a>
+
+          <a href="/blog" style="background:#2563eb; padding:8px 18px; border-radius:6px; color:white; text-decoration:none;">
+              Blog
+          </a>
+      </div>
+  </nav>
+
+  <div class="blog-page">
+    <div class="container">
+      <article class="blog-article">
+        <span class="badge">SEO Guide</span>
+
+        <h1>SEO Tips for Beginners: Simple Ways to Improve Rankings</h1>
+
+       <p> If you are a beginner and want to improve your website ranking, this complete SEO guide is perfect for you. With the help of a
+         free SEO audit, you can easily analyze your website and check free SEO score to improve performance.</p>
+
+        <h2>What is SEO?</h2>
+<p>SEO (Search Engine Optimization) is the process of optimizing your website to rank higher on search engines like Google. It helps increase organic traffic and visibility.</p>
+
+<ul>
+<li>On Page SEO</li>
+<li>Off Page SEO</li>
+<li>Technical SEO</li>
+</ul>
+
+<h2>1. Use the Right Keywords</h2>
+<p>Choosing the right keywords is the first step in SEO. Use keywords like <strong>free seo audit</strong>, <strong>seo guide</strong>, and <strong>check free seo score</strong> naturally in your content.</p>
+
+<h2>2. Optimize Meta Title & Description</h2>
+<p>Meta tags play a major role in ranking and click-through rate.</p>
+
+<ul>
+<li>Use main keyword in title</li>
+<li>Write attractive description</li>
+<li>Keep it clear and relevant</li>
+</ul>
+
+<h2>3. Improve Website Speed</h2>
+<p>A fast-loading website improves user experience and SEO ranking.</p>
+
+<ul>
+<li>Compress images</li>
+<li>Use fast hosting</li>
+<li>Remove unnecessary code</li>
+</ul>
+
+<h2>4. Use a Free SEO Audit Tool</h2>
+<p>A <strong>free SEO audit</strong> helps you identify errors and improve your website performance.</p>
+
+<a href="/" class="btn">Check Free SEO Score 🚀</a>
+
+<h2>5. Write High Quality Content</h2>
+<p>Content is the most important part of SEO.</p>
+
+<ul>
+<li>Write unique content</li>
+<li>Use proper headings (H1, H2, H3)</li>
+<li>Focus on user intent</li>
+<li>Write at least 800+ words</li>
+</ul>
+
+<h2>6. Use Internal Linking</h2>
+<p>Internal linking helps search engines understand your website structure and improves ranking.</p>
+
+<h2>7. Make Your Website Mobile Friendly</h2>
+<p>Most users visit websites on mobile devices, so your website must be responsive and fast.</p>
+
+<h2>8. Fix Technical SEO Issues</h2>
+<p>Technical SEO ensures that your website is properly crawled and indexed.</p>
+
+<ul>
+<li>Fix broken links</li>
+<li>Add sitemap.xml</li>
+<li>Use robots.txt</li>
+<li>Check indexing issues</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>By following these simple SEO tips, beginners can easily improve their website ranking. Always perform a <strong>free SEO audit</strong> and regularly <strong>check free SEO score</strong> to stay ahead in SEO.</p>
+
+<a href="/" class="btn">Start Free SEO Audit Now 🚀</a>
+
+</div>
+
+  <footer class="main-footer">
+    <p>© 2026 Free SEO Audit Tool | Built by Mayank</p>
+    <div class="footer-links">
+      <a href="/privacy">Privacy Policy</a>
+      <span>|</span>
+      <a href="/terms">Terms & Conditions</a>
+    </div>
+  </footer>
+
 </body>
 </html>
