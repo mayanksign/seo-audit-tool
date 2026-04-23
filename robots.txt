@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
+Allow: /blog/
+Allow: /blog/free-seo-audit-tool
+
 Disallow:
 
 Sitemap: https://freeseoaudit.site/sitemap.xml
