@@ -328,7 +328,7 @@ tr:hover td {
 <form method="post">
     <textarea name="domains" placeholder="Enter domains (one per line)..."></textarea>
 
-<button>Analyze Website Now </button>
+<button id="analyzeBtn">Analyze Website Now </button>
 
 <div class="trust-lines">
   <p>✅ 1000+ Websites Analyzed</p>
@@ -387,6 +387,18 @@ tr:hover td {
     </div>
 </div>
 
+
+
+<script>
+document.getElementById("analyzeBtn").addEventListener("click", function() {
+
+    gtag('event', 'analyze_click', {
+        event_category: 'SEO Tool',
+        event_label: 'Analyze Website Now'
+    });
+
+});
+</script>
 
 
 
