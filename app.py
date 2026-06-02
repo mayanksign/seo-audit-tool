@@ -435,7 +435,7 @@ def blog2():
 def blog3():
     return render_template('blog3.html')
 
-@app.route('/blog/on-page-seo-checklist-for-better-rankings')
+@app.route('/blog/on-page-seo-checklist')
 def blog4():
     return render_template('blog4.html')
 
