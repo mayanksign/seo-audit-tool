@@ -431,6 +431,9 @@ def blog2():
     return render_template('blog2.html')
 
 
+@app.route('/blog/improve-website-seo-score'')
+def blog2():
+    return render_template('blog3.html')
 
 
 
