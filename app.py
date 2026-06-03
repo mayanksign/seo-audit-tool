@@ -843,7 +843,7 @@ transform:translateY(-5px);
 <div class="faq-wrap">
 
     <div class="faq-box">
-        <h3>What is an SEO audit tool?</h3>
+        <h3>1. What is an SEO audit tool?</h3>
         <p>
             An SEO audit tool helps analyze your website and detect SEO issues
             like title optimization, meta description, headings, internal links,
@@ -852,7 +852,7 @@ transform:translateY(-5px);
     </div>
 
     <div class="faq-box">
-        <h3>Is this SEO audit tool completely free?</h3>
+        <h3>2. Is this SEO audit tool completely free?</h3>
         <p>
             Yes, our free SEO audit tool is completely free to use.
             You can analyze websites instantly without signup or payment.
@@ -860,7 +860,7 @@ transform:translateY(-5px);
     </div>
 
     <div class="faq-box">
-        <h3>What does this SEO audit tool analyze?</h3>
+        <h3>3. What does this SEO audit tool analyze?</h3>
         <p>
             Our SEO checker analyzes website title, meta description,
             word count, heading structure (H1 & H2), internal links,
@@ -869,7 +869,7 @@ transform:translateY(-5px);
     </div>
 
     <div class="faq-box">
-        <h3>How can I improve my website SEO score?</h3>
+        <h3>4. How can I improve my website SEO score?</h3>
         <p>
             You can improve SEO score by optimizing title tags,
             meta descriptions, headings, internal links, content quality,
@@ -878,7 +878,7 @@ transform:translateY(-5px);
     </div>
 
     <div class="faq-box">
-        <h3>Do I need technical knowledge to use this tool?</h3>
+        <h3>5. Do I need technical knowledge to use this tool?</h3>
         <p>
             No. Our SEO audit tool is beginner friendly and easy to use.
             Simply enter your website URL and get instant SEO insights.
@@ -886,7 +886,7 @@ transform:translateY(-5px);
     </div>
 
     <div class="faq-box">
-        <h3>Can I use this SEO audit tool for any website?</h3>
+        <h3>6. Can I use this SEO audit tool for any website?</h3>
         <p>
             Yes, you can analyze blogs, business websites,
             ecommerce stores, portfolio websites and almost any public website.
@@ -894,7 +894,7 @@ transform:translateY(-5px);
     </div>
 
     <div class="faq-box">
-        <h3>Why are robots.txt and sitemap important for SEO?</h3>
+        <h3>7. Why are robots.txt and sitemap important for SEO?</h3>
         <p>
             Robots.txt helps search engines understand crawl rules,
             while sitemap.xml helps search engines discover and index pages faster.
@@ -902,7 +902,7 @@ transform:translateY(-5px);
     </div>
 
     <div class="faq-box">
-        <h3>Does this tool help improve Google rankings?</h3>
+        <h3>8. Does this tool help improve Google rankings?</h3>
         <p>
             The tool identifies SEO issues and improvement opportunities.
             Fixing these problems can help improve website visibility and SEO performance.
