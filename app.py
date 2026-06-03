@@ -971,7 +971,6 @@ document.getElementById("analyzeBtn").addEventListener("click", function() {
 </body>
 
 </html>
-"""
 
 
 @app.route('/about')
