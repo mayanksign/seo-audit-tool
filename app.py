@@ -529,6 +529,23 @@ transition:.3s;
 transform:translateY(-5px);
 }
 
+@media(max-width:768px){
+
+```
+.section-title h2{
+    font-size:30px;
+}
+
+.steps-grid,
+.feature-list,
+.blog-grid{
+    grid-template-columns:1fr;
+}
+```
+
+}
+
+
 
 
 
@@ -916,6 +933,7 @@ transform:translateY(-5px);
     </a>
 
 </div>
+```
 
 </section>
 
@@ -953,6 +971,7 @@ document.getElementById("analyzeBtn").addEventListener("click", function() {
 </body>
 
 </html>
+"""
 
 
 @app.route('/about')
@@ -1082,4 +1101,3 @@ def home():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 10000)))
-
