@@ -272,6 +272,119 @@ tr:hover td {
 
 
 
+
+
+.seo-report-section{
+    margin-top:50px;
+}
+
+.seo-report-wrapper{
+    background:#0f172a;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:25px;
+    padding:40px;
+    display:flex;
+    gap:40px;
+    align-items:center;
+    box-shadow:0 0 35px rgba(59,130,246,.12);
+}
+
+.section-badge{
+    display:inline-block;
+    background:rgba(59,130,246,.12);
+    color:#60a5fa;
+    padding:10px 18px;
+    border-radius:30px;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+.seo-report-content{
+    flex:1;
+}
+
+.seo-report-content h2{
+    font-size:36px;
+    margin-bottom:15px;
+    color:#fff;
+}
+
+.seo-text{
+    color:#cbd5e1;
+    line-height:1.9;
+    margin-bottom:25px;
+}
+
+.seo-feature-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.seo-feature-card{
+    background:#111827;
+    border-radius:18px;
+    padding:18px;
+    display:flex;
+    gap:14px;
+    border:1px solid rgba(255,255,255,.06);
+}
+
+.seo-feature-card span{
+    font-size:28px;
+}
+
+.seo-feature-card h4{
+    color:#fff;
+    margin-bottom:5px;
+}
+
+.seo-feature-card p{
+    color:#94a3b8;
+    font-size:14px;
+}
+
+.seo-report-image{
+    flex:1;
+}
+
+.seo-report-image img{
+    width:100%;
+    border-radius:18px;
+}
+
+@media(max-width:768px){
+
+    .seo-report-wrapper{
+        flex-direction:column;
+        padding:25px;
+    }
+
+    .seo-feature-grid{
+        grid-template-columns:1fr;
+    }
+
+    .seo-report-content h2{
+        font-size:28px;
+        text-align:center;
+    }
+
+    .seo-text{
+        text-align:center;
+    }
+
+    .section-badge{
+        display:table;
+        margin:auto auto 20px;
+    }
+}
+
+
+
+
+
+
+
 </style>
 </head>
 
@@ -337,6 +450,100 @@ tr:hover td {
 </div>
    
 </form>
+
+
+
+<section class="seo-report-section">
+
+    <div class="seo-report-wrapper">
+
+        <div class="seo-report-content">
+
+            <span class="section-badge">
+                🚀 Complete Website SEO Analysis
+            </span>
+
+            <h2>
+                What Our Free SEO Audit Tool Analyzes
+            </h2>
+
+            <p class="seo-text">
+                Get a complete SEO audit report instantly. Our tool analyzes
+                website title, meta description, heading structure, word count,
+                links, robots.txt, sitemap availability, and technical SEO
+                signals to help improve rankings.
+            </p>
+
+            <div class="seo-feature-grid">
+
+                <div class="seo-feature-card">
+                    <span>📌</span>
+                    <div>
+                        <h4>SEO Title Check</h4>
+                        <p>Analyze title optimization.</p>
+                    </div>
+                </div>
+
+                <div class="seo-feature-card">
+                    <span>📝</span>
+                    <div>
+                        <h4>Meta Description</h4>
+                        <p>Check SEO description quality.</p>
+                    </div>
+                </div>
+
+                <div class="seo-feature-card">
+                    <span>🏷️</span>
+                    <div>
+                        <h4>Heading Analysis</h4>
+                        <p>H1 & H2 structure detection.</p>
+                    </div>
+                </div>
+
+                <div class="seo-feature-card">
+                    <span>🔗</span>
+                    <div>
+                        <h4>Links Analysis</h4>
+                        <p>Detect internal links.</p>
+                    </div>
+                </div>
+
+                <div class="seo-feature-card">
+                    <span>🤖</span>
+                    <div>
+                        <h4>Robots.txt Check</h4>
+                        <p>Verify robots.txt instantly.</p>
+                    </div>
+                </div>
+
+                <div class="seo-feature-card">
+                    <span>🗺️</span>
+                    <div>
+                        <h4>Sitemap Detection</h4>
+                        <p>Check sitemap availability.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="seo-report-image">
+
+            <img src="/static/result-preview.png"
+                 alt="SEO Audit Report Preview">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
 
 {% if results %}
 <div style="max-height:500px; overflow-y:auto; margin:20px 30px 0;">
