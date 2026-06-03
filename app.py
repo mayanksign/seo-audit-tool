@@ -406,6 +406,166 @@ max-width:700px;
 
 
 
+.modern-sections{
+width:95%;
+max-width:1200px;
+margin:90px auto;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:40px;
+}
+
+.section-title span{
+color:#60a5fa;
+font-size:14px;
+letter-spacing:1px;
+}
+
+.section-title h2{
+font-size:42px;
+margin:15px 0;
+}
+
+.section-title p{
+color:#94a3b8;
+max-width:700px;
+margin:auto;
+line-height:1.8;
+}
+
+.spacing-top{
+margin-top:90px;
+}
+
+.steps-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.mini-box{
+background:rgba(255,255,255,.03);
+border:1px solid rgba(255,255,255,.06);
+border-radius:25px;
+padding:35px;
+transition:.3s ease;
+}
+
+.mini-box:hover{
+transform:translateY(-6px);
+}
+
+.step-circle{
+width:55px;
+height:55px;
+border-radius:50%;
+background:#2563eb;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:22px;
+font-weight:bold;
+margin-bottom:20px;
+}
+
+.mini-box h3{
+margin-bottom:12px;
+}
+
+.mini-box p{
+color:#94a3b8;
+line-height:1.7;
+}
+
+.feature-list{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+}
+
+.feature-item{
+background:rgba(255,255,255,.03);
+border-radius:18px;
+padding:22px;
+text-align:center;
+}
+
+.faq-wrap{
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+.faq-box{
+background:rgba(255,255,255,.03);
+border-radius:20px;
+padding:30px;
+}
+
+.faq-box p{
+color:#94a3b8;
+margin-top:12px;
+line-height:1.8;
+}
+
+.blog-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.blog-card{
+background:rgba(255,255,255,.03);
+padding:28px;
+border-radius:20px;
+text-decoration:none;
+color:#60a5fa;
+transition:.3s;
+}
+
+.blog-card:hover{
+transform:translateY(-5px);
+}
+
+@media(max-width:768px){
+
+```
+.section-title h2{
+    font-size:30px;
+}
+
+.steps-grid,
+.feature-list,
+.blog-grid{
+    grid-template-columns:1fr;
+}
+```
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </style>
 </head>
@@ -611,6 +771,172 @@ max-width:700px;
     </div>
 
 </section>
+
+
+
+
+<section class="modern-sections">
+
+```
+<!-- HOW IT WORKS -->
+<div class="section-title">
+    <span>⚡ HOW IT WORKS</span>
+    <h2>How Our SEO Audit Tool Works</h2>
+    <p>
+        Analyze your website in seconds with a simple and fast process.
+    </p>
+</div>
+
+<div class="steps-grid">
+
+    <div class="mini-box">
+        <div class="step-circle">1</div>
+        <h3>Enter Website URL</h3>
+        <p>
+            Paste your website domain to start SEO analysis instantly.
+        </p>
+    </div>
+
+    <div class="mini-box">
+        <div class="step-circle">2</div>
+        <h3>Analyze Website</h3>
+        <p>
+            Click analyze to check titles, headings, links and SEO signals.
+        </p>
+    </div>
+
+    <div class="mini-box">
+        <div class="step-circle">3</div>
+        <h3>Get SEO Report</h3>
+        <p>
+            View sitemap, robots.txt, meta description and website insights.
+        </p>
+    </div>
+
+</div>
+
+
+<!-- WHY CHOOSE -->
+<div class="section-title spacing-top">
+    <span>🔥 WHY CHOOSE US</span>
+    <h2>Why Use Our Free SEO Audit Tool?</h2>
+</div>
+
+<div class="feature-list">
+
+    <div class="feature-item">✅ 100% Free SEO Analysis</div>
+    <div class="feature-item">⚡ Instant Website Report</div>
+    <div class="feature-item">🔒 No Signup Required</div>
+    <div class="feature-item">📈 SEO Friendly Insights</div>
+    <div class="feature-item">🛠 Technical SEO Checks</div>
+    <div class="feature-item">🚀 Beginner Friendly</div>
+
+</div>
+
+
+<!-- FAQ -->
+<div class="section-title spacing-top">
+    <span>❓ FAQ</span>
+    <h2>Frequently Asked Questions</h2>
+</div>
+
+<div class="faq-wrap">
+
+    <div class="faq-box">
+        <h3>What is an SEO audit tool?</h3>
+        <p>
+            An SEO audit tool helps analyze your website and detect SEO issues
+            like title optimization, meta description, headings, internal links,
+            robots.txt, sitemap availability and technical SEO problems.
+        </p>
+    </div>
+
+    <div class="faq-box">
+        <h3>Is this SEO audit tool completely free?</h3>
+        <p>
+            Yes, our free SEO audit tool is completely free to use.
+            You can analyze websites instantly without signup or payment.
+        </p>
+    </div>
+
+    <div class="faq-box">
+        <h3>What does this SEO audit tool analyze?</h3>
+        <p>
+            Our SEO checker analyzes website title, meta description,
+            word count, heading structure (H1 & H2), internal links,
+            robots.txt, sitemap.xml and technical SEO signals.
+        </p>
+    </div>
+
+    <div class="faq-box">
+        <h3>How can I improve my website SEO score?</h3>
+        <p>
+            You can improve SEO score by optimizing title tags,
+            meta descriptions, headings, internal links, content quality,
+            robots.txt and sitemap structure.
+        </p>
+    </div>
+
+    <div class="faq-box">
+        <h3>Do I need technical knowledge to use this tool?</h3>
+        <p>
+            No. Our SEO audit tool is beginner friendly and easy to use.
+            Simply enter your website URL and get instant SEO insights.
+        </p>
+    </div>
+
+    <div class="faq-box">
+        <h3>Can I use this SEO audit tool for any website?</h3>
+        <p>
+            Yes, you can analyze blogs, business websites,
+            ecommerce stores, portfolio websites and almost any public website.
+        </p>
+    </div>
+
+    <div class="faq-box">
+        <h3>Why are robots.txt and sitemap important for SEO?</h3>
+        <p>
+            Robots.txt helps search engines understand crawl rules,
+            while sitemap.xml helps search engines discover and index pages faster.
+        </p>
+    </div>
+
+    <div class="faq-box">
+        <h3>Does this tool help improve Google rankings?</h3>
+        <p>
+            The tool identifies SEO issues and improvement opportunities.
+            Fixing these problems can help improve website visibility and SEO performance.
+        </p>
+    </div>
+
+</div>
+
+
+<!-- BLOG LINKS -->
+<div class="section-title spacing-top">
+    <span>📚 SEO BLOGS</span>
+    <h2>Learn SEO With Our Guides</h2>
+</div>
+
+<div class="blog-grid">
+
+    <a href="/blog/free-seo-audit-tool" class="blog-card">
+        Free SEO Audit Tool Guide →
+    </a>
+
+    <a href="/blog/improve-website-seo-score" class="blog-card">
+        Improve Website SEO Score →
+    </a>
+
+    <a href="/blog/on-page-seo-checklist" class="blog-card">
+        On Page SEO Checklist →
+    </a>
+
+</div>
+```
+
+</section>
+
 
 
 
