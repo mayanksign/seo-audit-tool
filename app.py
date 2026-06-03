@@ -453,6 +453,57 @@ tr:hover td {
 
 
 
+
+
+
+
+
+
+
+
+{% if results %}
+<div style="max-height:500px; overflow-y:auto; margin:20px 30px 0;">
+<table>
+    <tr>
+        <th>Domain</th>
+        <th>Status</th> 
+        <th>Title</th>
+        <th>Meta Desc</th>
+        <th>Words</th>
+        <th>H1</th>
+        <th>H2</th>
+        <th>Links</th>
+        <th>Robots</th>
+        <th>Sitemap</th>
+    </tr>
+
+    {% for r in results %}
+    <tr>
+        <td>{{r.domain}}</td>
+        <td>{{r.status}}</td>
+        <td>{{r.title}}</td>
+        <td>{{r.meta}}</td>
+        <td>{{r.words}}</td>
+        <td>{{r.h1}}</td>
+        <td>{{r.h2}}</td>
+        <td>{{r.links}}</td>
+        <td>{{r.robots}}</td>
+        <td>{{r.sitemap}}</td>
+    </tr>
+    {% endfor %}
+</table>
+</div>
+{% endif %}
+
+
+
+</div>
+
+</div>
+
+
+
+
 <section class="seo-report-section">
 
     <div class="seo-report-wrapper">
@@ -543,47 +594,6 @@ tr:hover td {
 
 
 
-
-
-{% if results %}
-<div style="max-height:500px; overflow-y:auto; margin:20px 30px 0;">
-<table>
-    <tr>
-        <th>Domain</th>
-        <th>Status</th> 
-        <th>Title</th>
-        <th>Meta Desc</th>
-        <th>Words</th>
-        <th>H1</th>
-        <th>H2</th>
-        <th>Links</th>
-        <th>Robots</th>
-        <th>Sitemap</th>
-    </tr>
-
-    {% for r in results %}
-    <tr>
-        <td>{{r.domain}}</td>
-        <td>{{r.status}}</td>
-        <td>{{r.title}}</td>
-        <td>{{r.meta}}</td>
-        <td>{{r.words}}</td>
-        <td>{{r.h1}}</td>
-        <td>{{r.h2}}</td>
-        <td>{{r.links}}</td>
-        <td>{{r.robots}}</td>
-        <td>{{r.sitemap}}</td>
-    </tr>
-    {% endfor %}
-</table>
-</div>
-{% endif %}
-
-
-
-</div>
-
-</div>
 
 <div class="main-footer">
     <p>© 2026 Free SEO Audit Tool | Built by Mayank</p>
