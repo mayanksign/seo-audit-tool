@@ -529,19 +529,7 @@ transition:.3s;
 transform:translateY(-5px);
 }
 
-@media(max-width:768px){
 
-.section-title h2{
-    font-size: 30px;
-}
-
-.steps-grid,
-.feature-list,
-.blog-grid{
-    grid-template-columns:1fr;
-}
-
-}
 
 
 
