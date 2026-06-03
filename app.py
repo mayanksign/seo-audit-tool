@@ -275,18 +275,22 @@ tr:hover td {
 
 
 .seo-report-section{
-    margin-top:50px;
+    margin-top:90px;
+    padding:40px 0;
 }
 
 .seo-report-wrapper{
+    max-width:1300px;
+    margin:auto;
     background:#0f172a;
     border:1px solid rgba(255,255,255,.08);
-    border-radius:25px;
-    padding:40px;
+    border-radius:28px;
+    padding:60px;
     display:flex;
-    gap:40px;
+    gap:70px;
     align-items:center;
-    box-shadow:0 0 35px rgba(59,130,246,.12);
+    justify-content:space-between;
+    box-shadow:0 0 40px rgba(59,130,246,.08);
 }
 
 .section-badge{
@@ -301,12 +305,20 @@ tr:hover td {
 
 .seo-report-content{
     flex:1;
+
+max-width:700px;
+
+    
 }
 
 .seo-report-content h2{
     font-size:36px;
     margin-bottom:15px;
     color:#fff;
+
+
+
+    
 }
 
 .seo-text{
@@ -350,7 +362,17 @@ tr:hover td {
 
 .seo-report-image img{
     width:100%;
-    border-radius:18px;
+    max-width:760px;
+    border-radius:24px;
+    border:1px solid rgba(255,255,255,.08);
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.45),
+    0 0 50px rgba(59,130,246,.10);
+    transition:.3s ease;
+}
+
+.seo-report-image img:hover{
+    transform:translateY(-6px);
 }
 
 @media(max-width:768px){
