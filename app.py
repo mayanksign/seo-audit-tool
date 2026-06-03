@@ -531,10 +531,9 @@ transform:translateY(-5px);
 
 @media(max-width:768px){
 
-'''
 
 .section-title h2{
-    font-size:30px;
+    font-size: 30px;
 }
 
 .steps-grid,
