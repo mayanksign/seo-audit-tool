@@ -541,9 +541,6 @@ transform:translateY(-5px);
 .blog-grid{
     grid-template-columns:1fr;
 }
-```
-
-}
 
 
 
