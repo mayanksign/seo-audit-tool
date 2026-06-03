@@ -543,7 +543,7 @@ transform:translateY(-5px);
 }
 
 
-
+}
 
 
 
@@ -930,7 +930,6 @@ transform:translateY(-5px);
     </a>
 
 </div>
-```
 
 </section>
 
