@@ -758,7 +758,7 @@ transform:translateY(-5px);
 
 <section class="modern-sections">
 
-```
+
 <!-- HOW IT WORKS -->
 <div class="section-title">
     <span>⚡ HOW IT WORKS</span>
