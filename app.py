@@ -1058,12 +1058,41 @@ def analyze(domain):
     except:
         data["robots"] = "Error"
 
-    try:
-        site = requests.get(base + "/sitemap.xml", timeout=5)
-        data["sitemap"] = "Yes" if site.status_code == 200 else "No"
-    except:
-        data["sitemap"] = "Error"
 
+
+  
+data["sitemap"] = "No"
+
+try:
+    robots = requests.get(base + "/robots.txt", timeout=5)
+
+    if "sitemap:" in robots.text.lower():
+        data["sitemap"] = "Yes"
+
+    else:
+        sitemap_urls = [
+            "/sitemap.xml",
+            "/sitemap_index.xml",
+            "/sitemap-index.xml",
+            "/_sitemaps/sitemap-index.xml"
+        ]
+
+        for sm in sitemap_urls:
+            try:
+                r = requests.get(base + sm, timeout=5)
+
+                if r.status_code == 200:
+                    data["sitemap"] = "Yes"
+                    break
+
+            except:
+                pass
+
+except:
+    data["sitemap"] = "Error"
+
+
+  
     return data
 
 @app.route("/", methods=["GET", "POST"])
