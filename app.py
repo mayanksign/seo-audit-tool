@@ -1060,25 +1060,18 @@ def analyze(domain):
 
 
 
-
-    try:
-        rob = requests.get(base + "/robots.txt", timeout=5)
-        data["robots"] = "Yes" if rob.status_code == 200 else "No"
-    except:
-        data["robots"] = "Error"
-
   
-      try:
+     try:
         site = requests.get(base + "/sitemap.xml", timeout=5)
 
-        if site.status_code == 200:
+      if site.status_code == 200:
             data["sitemap"] = "Yes"
-        else:
+    else:
             site2 = requests.get(base + "/sitemap_index.xml", timeout=5)
 
-            if site2.status_code == 200:
+      if site2.status_code == 200:
                 data["sitemap"] = "Yes"
-            else:
+       else:
                 data["sitemap"] = "No"
 
     except:
