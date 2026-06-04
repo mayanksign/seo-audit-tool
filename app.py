@@ -1059,16 +1059,12 @@ def analyze(domain):
         data["robots"] = "Error"
 
 
-
   
    try:
         site = requests.get(base + "/sitemap.xml", timeout=5)
         data["sitemap"] = "Yes" if site.status_code == 200 else "No"
     except:
         data["sitemap"] = "Error"
-
-
-
 
     return data
 
