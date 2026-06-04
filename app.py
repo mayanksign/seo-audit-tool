@@ -1061,8 +1061,26 @@ def analyze(domain):
 
 
     try:
-        site = requests.get(base + "/sitemap.xml", timeout=5)
-        data["sitemap"] = "Yes" if site.status_code == 200 else "No"
+        data["sitemap"] = "No"
+
+        sitemap_urls = [
+            "/sitemap.xml",
+            "/sitemap_index.xml",
+            "/sitemap-index.xml",
+            "/_sitemaps/sitemap-index.xml"
+        ]
+
+        for sm in sitemap_urls:
+            try:
+                site = requests.get(base + sm, timeout=5)
+
+                if site.status_code == 200:
+                    data["sitemap"] = "Yes"
+                    break
+
+      except:
+             pass
+
     except:
         data["sitemap"] = "Error"
       
