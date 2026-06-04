@@ -1062,14 +1062,14 @@ def analyze(domain):
 
   
 try:
+    data["sitemap"] = "No"
+
     sitemap_urls = [
         "/sitemap.xml",
         "/sitemap_index.xml",
         "/sitemap-index.xml",
         "/_sitemaps/sitemap-index.xml"
     ]
-
-    data["sitemap"] = "No"
 
     for sm in sitemap_urls:
         try:
@@ -1084,7 +1084,6 @@ try:
 
 except:
     data["sitemap"] = "Error"
-
 
   
     return data
