@@ -1060,8 +1060,15 @@ def analyze(domain):
 
 
 
+
+    try:
+        rob = requests.get(base + "/robots.txt", timeout=5)
+        data["robots"] = "Yes" if rob.status_code == 200 else "No"
+    except:
+        data["robots"] = "Error"
+
   
-       try:
+      try:
         site = requests.get(base + "/sitemap.xml", timeout=5)
 
         if site.status_code == 200:
@@ -1076,7 +1083,10 @@ def analyze(domain):
 
     except:
         data["sitemap"] = "Error"
-  
+
+
+
+
     return data
 
 @app.route("/", methods=["GET", "POST"])
