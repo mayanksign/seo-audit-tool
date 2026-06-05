@@ -1,1 +1,41 @@
+# Free SEO Audit
 
+> Free SEO Audit Tool for Technical SEO Analysis and Website Optimization.
+
+Website:
+https://www.freeseoaudit.site/
+
+Main Page:
+https://www.freeseoaudit.site/
+
+About:
+https://www.freeseoaudit.site/about
+
+Contact:
+https://www.freeseoaudit.site/contact
+
+Purpose:
+This website helps users analyze and improve their website SEO performance.
+
+Features:
+- SEO Audit
+- Technical SEO Analysis
+- On-Page SEO Checks
+- Website Health Review
+- SEO Recommendations
+
+Topics:
+- Technical SEO
+- On-Page SEO
+- XML Sitemaps
+- Robots.txt
+- Core Web Vitals
+- Schema Markup
+- Website Audits
+- AI Search Optimization
+
+Author:
+Mayank Singh
+
+Language:
+English
