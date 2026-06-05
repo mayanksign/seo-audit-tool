@@ -2,10 +2,45 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
    <url>
-      <loc>https://freeseoaudit.site/</loc>
-      <loc>https://www.freeseoaudit.site/blog/free-seo-audit-tool</loc>
-      <lastmod>2026-04-02</lastmod>
+      <loc>https://www.freeseoaudit.site/</loc>
+      <lastmod>2026-06-05</lastmod>
       <priority>1.0</priority>
+   </url>
+
+   <url>
+      <loc>https://www.freeseoaudit.site/about</loc>
+      <lastmod>2026-06-05</lastmod>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://www.freeseoaudit.site/contact</loc>
+      <lastmod>2026-06-05</lastmod>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://www.freeseoaudit.site/blog/free-seo-audit-tool</loc>
+      <lastmod>2026-06-05</lastmod>
+      <priority>0.9</priority>
+   </url>
+
+   <url>
+      <loc>https://www.freeseoaudit.site/blog/seo-tips-for-beginners</loc>
+      <lastmod>2026-06-05</lastmod>
+      <priority>0.9</priority>
+   </url>
+
+   <url>
+      <loc>https://www.freeseoaudit.site/blog/improve-website-seo-score</loc>
+      <lastmod>2026-06-05</lastmod>
+      <priority>0.9</priority>
+   </url>
+
+   <url>
+      <loc>https://www.freeseoaudit.site/blog/on-page-seo-checklist</loc>
+      <lastmod>2026-06-05</lastmod>
+      <priority>0.9</priority>
    </url>
 
 </urlset>
