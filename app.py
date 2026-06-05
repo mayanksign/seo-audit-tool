@@ -24,6 +24,18 @@ HTML = """
 </script>
 
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SEO Score",
+  "url": "https://www.freeseoaudit.site/",
+  "description": "Free SEO Audit Tool for Technical SEO Analysis and Website Optimization."
+}
+</script>
+
+
+
 
 <link rel="icon" href="/favicon.ico?v=2">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -32,6 +44,17 @@ HTML = """
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Free SEO Audit Tool Online | Check Website SEO Score Instantly</title>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"SEO Score",
+  "url":"https://www.freeseoaudit.site/"
+}
+</script>
+
+  
 
   <meta name="description" content="Analyze your website SEO instantly with our free SEO audit tool. Get detailed reports, errors, and suggestions without signup.">
 
