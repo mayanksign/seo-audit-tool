@@ -1009,9 +1009,19 @@ def sitemap():
     return send_from_directory('.', 'sitemap.xml')
   
 
+@app.route('/llms.txt')
+def llms():
+    return send_from_directory('.', 'llms.txt')
+
+
+
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory('.', 'favicon.ico')
+
+
+
+
 
 
 
