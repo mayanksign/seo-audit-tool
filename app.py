@@ -1093,7 +1093,7 @@ def analyze(domain):
 
 
 
-try:
+    try:
     sitemap_urls = [
         "/sitemap.xml",
         "/sitemap_index.xml",
@@ -1109,8 +1109,8 @@ try:
             data["sitemap"] = "Yes"
             break
 
-except:
-    data["sitemap"] = "Error"
+    except:
+        data["sitemap"] = "Error"
   
 
     return data
