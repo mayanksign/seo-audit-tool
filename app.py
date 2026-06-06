@@ -1129,8 +1129,8 @@ def analyze(domain):
 
 except:
     data["sitemap"] = "Error"
-      
-    return data
+
+return data
 
 @app.route("/", methods=["GET", "POST"])
 def home():
