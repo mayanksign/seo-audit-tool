@@ -1094,43 +1094,43 @@ def analyze(domain):
 
 
     try:
-        sitemap_urls = [
-        "/sitemap.xml",
-        "/sitemap_index.xml",
-        "/sitemap-index.xml",
-        "/post-sitemap.xml",
-        "/page-sitemap.xml"
-    ]
+            sitemap_urls = [
+                "/sitemap.xml",
+                "/sitemap_index.xml",
+                "/sitemap-index.xml",
+                "/post-sitemap.xml",
+                "/page-sitemap.xml"
+                 ]
 
-    found = False
+        found = False
 
         for sitemap_path in sitemap_urls:
-        try:
-            site = requests.get(base + sitemap_path, timeout=5)
+                try:
+                          site = requests.get(base + sitemap_path, timeout=5)
 
-            if site.status_code == 200:
-                found = True
+                          if site.status_code == 200:
+                                   found = True
                 break
 
-        except:
+              except:
             pass
 
-        if not found:
-        try:
-            rob = requests.get(base + "/robots.txt", timeout=5)
+              if not found:
+              try:
+                        rob = requests.get(base + "/robots.txt", timeout=5)
 
-            if "Sitemap:" in rob.text:
-                found = True
+                        if "Sitemap:" in rob.text:
+                                   found = True
 
-        except:
+                except:
             pass
 
-    data["sitemap"] = "Yes" if found else "No"
+           data["sitemap"] = "Yes" if found else "No"
 
     except:
     data["sitemap"] = "Error"
 
-return data
+    return data
 
 @app.route("/", methods=["GET", "POST"])
 def home():
