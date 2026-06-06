@@ -1093,15 +1093,15 @@ def analyze(domain):
 
 
 
-try:
-    rob = requests.get(base + "/robots.txt", timeout=5)
-
-    if "Sitemap:" in rob.text:
+    try:
+        rob = requests.get(base + "/robots.txt", timeout=5)
+ 
+     if "Sitemap:" in rob.text:
         data["sitemap"] = "Yes"
-    else:
+     else:
         data["sitemap"] = "No"
 
-except:
+   except:
     data["sitemap"] = "Error"
       
     return data
