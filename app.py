@@ -1094,7 +1094,7 @@ def analyze(domain):
 
 
     try:
-    sitemap_urls = [
+        sitemap_urls = [
         "/sitemap.xml",
         "/sitemap_index.xml",
         "/wp-sitemap.xml"
@@ -1108,9 +1108,8 @@ def analyze(domain):
         if site.status_code == 200:
             data["sitemap"] = "Yes"
             break
-
     except:
-        data["sitemap"] = "Error"
+         data["sitemap"] = "Error"
   
 
     return data
