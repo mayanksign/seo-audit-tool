@@ -1104,7 +1104,7 @@ def analyze(domain):
 
     found = False
 
-    for sitemap_path in sitemap_urls:
+        for sitemap_path in sitemap_urls:
         try:
             site = requests.get(base + sitemap_path, timeout=5)
 
@@ -1115,7 +1115,7 @@ def analyze(domain):
         except:
             pass
 
-    if not found:
+        if not found:
         try:
             rob = requests.get(base + "/robots.txt", timeout=5)
 
@@ -1127,7 +1127,7 @@ def analyze(domain):
 
     data["sitemap"] = "Yes" if found else "No"
 
-except:
+    except:
     data["sitemap"] = "Error"
 
 return data
