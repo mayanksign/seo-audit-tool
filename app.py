@@ -1094,23 +1094,10 @@ def analyze(domain):
 
 
     try:
-        sitemap_urls = [
-        "/sitemap.xml",
-        "/sitemap_index.xml",
-        "/wp-sitemap.xml"
-    ]
-
-    data["sitemap"] = "No"
-
-    for path in sitemap_urls:
-        site = requests.get(base + path, timeout=5)
-
-        if site.status_code == 200:
-            data["sitemap"] = "Yes"
-            break
+        site = requests.get(base + "/sitemap.xml", timeout=5)
+        data["sitemap"] = "Yes" if site.status_code == 200 else "No"
     except:
-         data["sitemap"] = "Error"
-  
+        data["sitemap"] = "Error"
 
     return data
 
