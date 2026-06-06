@@ -1094,41 +1094,10 @@ def analyze(domain):
 
 
     try:
-            sitemap_urls = [
-                "/sitemap.xml",
-                "/sitemap_index.xml",
-                "/sitemap-index.xml",
-                "/post-sitemap.xml",
-                "/page-sitemap.xml"
-                 ]
-
-        found = False
-
-        for sitemap_path in sitemap_urls:
-                try:
-                          site = requests.get(base + sitemap_path, timeout=5)
-
-                          if site.status_code == 200:
-                                   found = True
-                break
-
-              except:
-            pass
-
-              if not found:
-              try:
-                        rob = requests.get(base + "/robots.txt", timeout=5)
-
-                        if "Sitemap:" in rob.text:
-                                   found = True
-
-                except:
-            pass
-
-           data["sitemap"] = "Yes" if found else "No"
-
+        site = requests.get(base + "/sitemap.xml", timeout=5)
+        data["sitemap"] = "Yes" if site.status_code == 200 else "No"
     except:
-    data["sitemap"] = "Error"
+        data["sitemap"] = "Error"
 
     return data
 
