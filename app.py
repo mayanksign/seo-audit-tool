@@ -1094,7 +1094,7 @@ def analyze(domain):
 
 
     try:
-    sitemap_urls = [
+        sitemap_urls = [
         "/sitemap.xml",
         "/sitemap_index.xml",
         "/sitemap-index.xml",
