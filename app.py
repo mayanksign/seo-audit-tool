@@ -13,9 +13,9 @@ HTML = """
 <html>
 <head>
 
-<meta property="og:site_name" content="SEO Score">
-<meta name="application-name" content="SEO Score">
-<meta name="apple-mobile-web-app-title" content="SEO Score">
+<meta property="og:site_name" content="SEO SCORE">
+<meta name="application-name" content="SEO SCORE">
+<meta name="apple-mobile-web-app-title" content="SEO SCORE">
 
 
 
