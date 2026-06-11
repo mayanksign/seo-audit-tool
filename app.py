@@ -13,6 +13,12 @@ HTML = """
 <html>
 <head>
 
+<meta property="og:site_name" content="SEO Score">
+<meta name="application-name" content="SEO Score">
+<meta name="apple-mobile-web-app-title" content="SEO Score">
+
+
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4N0SB8JHTS"></script>
 <script>
