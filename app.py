@@ -34,7 +34,7 @@ HTML = """
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "SEO Score",
+  "name": "SEO SCORE",
   "url": "https://www.freeseoaudit.site/",
   "description": "Free SEO Audit Tool for Technical SEO Analysis and Website Optimization."
 }
@@ -49,20 +49,20 @@ HTML = """
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Free SEO Audit Tool Online | Check Website SEO Score Instantly</title>
+  <title>SEO SCORE - Free SEO Audit Tool | Website SEO Checker</title>
 
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
   "@type":"WebSite",
-  "name":"SEO Score",
+  "name":"SEO SCORE",
   "url":"https://www.freeseoaudit.site/"
 }
 </script>
 
   
 
-  <meta name="description" content="Analyze your website SEO instantly with our free SEO audit tool. Get detailed reports, errors, and suggestions without signup.">
+  <meta name="description" content="Check your website SEO score instantly with SEO SCORE. Get a free SEO audit, analyze meta tags, headings, sitemap, robots.txt, and SEO issues.">
 
 <style>
 * {
