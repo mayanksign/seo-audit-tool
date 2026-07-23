@@ -19,6 +19,11 @@ HTML = """
 
 
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5980968706835626"
+     crossorigin="anonymous"></script>
+
+
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4N0SB8JHTS"></script>
 <script>
