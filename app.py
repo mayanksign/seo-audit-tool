@@ -56,6 +56,7 @@ HTML = """
   "@context":"https://schema.org",
   "@type":"WebSite",
   "name":"SEO SCORE",
+  "alternateName": "Free SEO Audit Tool"
   "url":"https://www.freeseoaudit.site/"
 }
 </script>
