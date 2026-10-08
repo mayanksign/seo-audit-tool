@@ -67,6 +67,33 @@ s, h = req("/", {"domains": many})
 r = rows(h)
 check("POST / over the limit -> extras reported as Skipped", s == 200 and len(r) == 30 and "Skipped" in r[-1][1], (s, len(r)))
 
+# Security headers on pages, static assets and error responses.
+SEC = ["Strict-Transport-Security", "X-Content-Type-Options", "X-Frame-Options", "Referrer-Policy", "Permissions-Policy"]
+
+
+def headers_of(path):
+    try:
+        with urllib.request.urlopen(urllib.request.Request(BASE + path, headers={"User-Agent": "smoke-test"}), timeout=60) as r:
+            return r.headers, r.read().decode("utf-8", "replace")
+    except urllib.error.HTTPError as e:
+        return e.headers, ""
+
+
+for path in ["/", "/about", "/blog/free-seo-audit-tool", "/static/site.css", "/static/logo.png", "/robots.txt", "/nope"]:
+    h, _ = headers_of(path)
+    missing = [k for k in SEC if not h.get(k)]
+    check(f"security headers on {path}", not missing, missing)
+
+h1, b1 = headers_of("/")
+h2, b2 = headers_of("/")
+n1 = re.search(r'nonce="([^"]+)"', b1)
+n2 = re.search(r'nonce="([^"]+)"', b2)
+csp = h1.get("Content-Security-Policy", "")
+check("CSP present with nonce that matches the page's scripts",
+      bool(n1) and f"'nonce-{n1.group(1)}'" in csp and "object-src 'none'" in csp, csp[:120])
+check("CSP nonce changes on every response", bool(n1 and n2) and n1.group(1) != n2.group(1))
+check("every <script> on / carries the nonce", len(re.findall(r"<script\b(?![^>]*nonce=)", b1)) == 0)
+
 # Opt-in JSON view (Accept: application/json) exposes the signals the table doesn't show.
 import json  # noqa: E402
 

@@ -6,9 +6,28 @@ import os
 import sys
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "src"))
 
+import json
+
+from security import html_response_parts
 from seo_core import normalize_domain, parse_page
 
 app = Flask(__name__)
+
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "security-headers.json"), encoding="utf-8") as _f:
+    SECURITY_HEADERS = json.load(_f)
+
+
+@app.after_request
+def add_security_headers(resp):
+    """Same headers as the Cloudflare Worker (src/worker.py): HSTS, nosniff, CSP with nonce, ..."""
+    if resp.mimetype == "text/html" and not resp.direct_passthrough:
+        body, headers = html_response_parts(resp.get_data(as_text=True), SECURITY_HEADERS)
+        resp.set_data(body)
+    else:
+        headers = SECURITY_HEADERS
+    for k, v in headers.items():
+        resp.headers[k] = v
+    return resp
 
 # The home page markup now lives in templates/index.html (it used to be an
 # inline HTML string here) so the Flask app and the Cloudflare Worker share it.
