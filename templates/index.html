@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta property="og:site_name" content="SEO SCORE">
+<meta name="application-name" content="SEO SCORE">
+<meta name="apple-mobile-web-app-title" content="SEO SCORE">
+<meta name="theme-color" content="#0b1220">
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5980968706835626"
+     crossorigin="anonymous"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4N0SB8JHTS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4N0SB8JHTS');
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SEO SCORE",
+  "url": "https://www.freeseoaudit.site/",
+  "description": "Free SEO Audit Tool for Technical SEO Analysis and Website Optimization."
+}
+</script>
+
+<link rel="icon" href="/favicon.ico?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<title>SEO SCORE - Free SEO Audit Tool | Website SEO Checker</title>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"SEO SCORE",
+  "alternateName": "Free SEO Audit Tool",
+  "url":"https://www.freeseoaudit.site/"
+}
+</script>
+
+<meta name="description" content="Check your website SEO score instantly with SEO SCORE. Get a free SEO audit, analyze meta tags, headings, sitemap, robots.txt, and SEO issues.">
+<link rel="canonical" href="https://www.freeseoaudit.site/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="SEO SCORE - Free SEO Audit Tool | Website SEO Checker">
+<meta property="og:description" content="Free SEO audit: check titles, meta descriptions, headings, links, robots.txt and sitemap instantly.">
+<meta property="og:url" content="https://www.freeseoaudit.site/">
+<meta property="og:image" content="https://www.freeseoaudit.site/static/result-preview.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="stylesheet" href="/static/site.css">
+</head>
+
+<body>
+
+{% include "_header.html" %}
+
+<main id="content">
+
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow"><i></i> 100% free · No signup · Instant report</span>
+    <h1>Free SEO Audit Tool to <em>check your website</em> in seconds</h1>
+    <p class="lede">Paste one or more domains and get a clear technical SEO snapshot: title, meta description, headings, links, robots.txt and sitemap availability.</p>
+
+    <div class="audit-card" id="audit">
+      <form method="post" action="/#results" id="auditForm">
+        <label for="domains">Websites to analyze</label>
+        <textarea id="domains" name="domains" placeholder="example.com&#10;another-site.com&#10;(one domain per line)" required></textarea>
+        <div class="audit-foot">
+          <small>🔒 We only read public pages. Nothing is stored.</small>
+          <button type="submit" id="analyzeBtn" class="btn btn-lg">Analyze Website Now</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="chips">
+      <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>1000+ Websites Analyzed</span>
+      <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Free &amp; Instant Report</span>
+      <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>No Signup Required</span>
+    </div>
+  </div>
+</section>
+
+{% if results %}
+<div class="wrap results-wrap" id="results">
+  <div class="results">
+    <div class="results-head">
+      <div>
+        <h2>Your SEO audit results</h2>
+        <p>Review each site below, then fix the items marked in red or amber.</p>
+      </div>
+      <button type="button" class="btn btn-ghost btn-sm" id="csvBtn">Download CSV</button>
+    </div>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Domain</th>
+            <th>Status</th>
+            <th>Title</th>
+            <th>Meta Desc</th>
+            <th>Words</th>
+            <th>H1</th>
+            <th>H2</th>
+            <th>Links</th>
+            <th>Robots</th>
+            <th>Sitemap</th>
+          </tr>
+        </thead>
+        <tbody>
+    {% for r in results %}
+          <tr>
+            <td data-label="Domain">{{r.domain}}</td>
+            <td data-label="Status">{{r.status}}</td>
+            <td data-label="Title">{{r.title}}</td>
+            <td data-label="Meta Desc">{{r.meta}}</td>
+            <td data-label="Words">{{r.words}}</td>
+            <td data-label="H1">{{r.h1}}</td>
+            <td data-label="H2">{{r.h2}}</td>
+            <td data-label="Links">{{r.links}}</td>
+            <td data-label="Robots">{{r.robots}}</td>
+            <td data-label="Sitemap">{{r.sitemap}}</td>
+          </tr>
+    {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<div class="wrap">
+
+<!-- WHAT WE ANALYZE -->
+<section class="section" id="features">
+  <div class="section-head">
+    <span class="kicker">Complete website SEO analysis</span>
+    <h2>What our free SEO audit tool analyzes</h2>
+    <p>Get a complete SEO audit report instantly. We check the technical signals search engines rely on to understand and rank your pages.</p>
+  </div>
+  <div class="grid-3">
+    <div class="card-x">
+      <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V4h16v3M9 20h6M12 4v16"/></svg></div>
+      <h3>SEO Title Check</h3>
+      <p>Analyze title optimization.</p>
+    </div>
+    <div class="card-x">
+      <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></div>
+      <h3>Meta Description</h3>
+      <p>Check SEO description quality.</p>
+    </div>
+    <div class="card-x">
+      <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4v16M18 4v16M6 12h12"/></svg></div>
+      <h3>Heading Analysis</h3>
+      <p>H1 &amp; H2 structure detection.</p>
+    </div>
+    <div class="card-x">
+      <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></div>
+      <h3>Links Analysis</h3>
+      <p>Detect internal links.</p>
+    </div>
+    <div class="card-x">
+      <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 8V4M9 14h.01M15 14h.01M9 17h6"/></svg></div>
+      <h3>Robots.txt Check</h3>
+      <p>Verify robots.txt instantly.</p>
+    </div>
+    <div class="card-x">
+      <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg></div>
+      <h3>Sitemap Detection</h3>
+      <p>Check sitemap availability.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PREVIEW -->
+<section class="section">
+  <div class="showcase">
+    <div>
+      <span class="kicker">Clear, actionable report</span>
+      <h2>See exactly what to fix, at a glance</h2>
+      <p>Our tool analyzes website title, meta description, heading structure, word count, links, robots.txt, sitemap availability and technical SEO signals to help improve rankings.</p>
+      <ul class="checks">
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>100% free SEO analysis</li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Audit several websites in one go</li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Export your results as CSV</li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Beginner friendly, no technical knowledge needed</li>
+      </ul>
+    </div>
+    <div class="browser">
+      <div class="browser-bar"><i></i><i></i><i></i></div>
+      <img src="/static/result-preview.png" alt="SEO Audit Report Preview" width="1200" height="850" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section">
+  <div class="section-head">
+    <span class="kicker">How it works</span>
+    <h2>How our SEO audit tool works</h2>
+    <p>Analyze your website in seconds with a simple and fast process.</p>
+  </div>
+  <div class="grid-3">
+    <div class="card-x"><div class="step-no">1</div><h3>Enter website URL</h3><p>Paste your website domain to start SEO analysis instantly.</p></div>
+    <div class="card-x"><div class="step-no">2</div><h3>Analyze website</h3><p>Click analyze to check titles, headings, links and SEO signals.</p></div>
+    <div class="card-x"><div class="step-no">3</div><h3>Get SEO report</h3><p>View sitemap, robots.txt, meta description and website insights.</p></div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="section">
+  <div class="section-head">
+    <span class="kicker">Why choose us</span>
+    <h2>Why use our free SEO audit tool?</h2>
+  </div>
+  <div class="grid-3">
+    <div class="card-x"><h3>✅ 100% Free SEO Analysis</h3><p>No limits on learning, no hidden costs.</p></div>
+    <div class="card-x"><h3>⚡ Instant Website Report</h3><p>Results in seconds, right in your browser.</p></div>
+    <div class="card-x"><h3>🔒 No Signup Required</h3><p>Just paste a domain and go.</p></div>
+    <div class="card-x"><h3>📈 SEO Friendly Insights</h3><p>Understand what each signal means for rankings.</p></div>
+    <div class="card-x"><h3>🛠 Technical SEO Checks</h3><p>Robots.txt, sitemap, headings and links covered.</p></div>
+    <div class="card-x"><h3>🚀 Beginner Friendly</h3><p>Clean report anyone can read and act on.</p></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="section-head">
+    <span class="kicker">FAQ</span>
+    <h2>Frequently asked questions</h2>
+  </div>
+  <div class="faq">
+    <details>
+      <summary>1. What is an SEO audit tool?</summary>
+      <p>An SEO audit tool helps analyze your website and detect SEO issues like title optimization, meta description, headings, internal links, robots.txt, sitemap availability and technical SEO problems.</p>
+    </details>
+    <details>
+      <summary>2. Is this SEO audit tool completely free?</summary>
+      <p>Yes, our free SEO audit tool is completely free to use. You can analyze websites instantly without signup or payment.</p>
+    </details>
+    <details>
+      <summary>3. What does this SEO audit tool analyze?</summary>
+      <p>Our SEO checker analyzes website title, meta description, word count, heading structure (H1 &amp; H2), internal links, robots.txt, sitemap.xml and technical SEO signals.</p>
+    </details>
+    <details>
+      <summary>4. How can I improve my website SEO score?</summary>
+      <p>You can improve SEO score by optimizing title tags, meta descriptions, headings, internal links, content quality, robots.txt and sitemap structure.</p>
+    </details>
+    <details>
+      <summary>5. Do I need technical knowledge to use this tool?</summary>
+      <p>No. Our SEO audit tool is beginner friendly and easy to use. Simply enter your website URL and get instant SEO insights.</p>
+    </details>
+    <details>
+      <summary>6. Can I use this SEO audit tool for any website?</summary>
+      <p>Yes, you can analyze blogs, business websites, ecommerce stores, portfolio websites and almost any public website.</p>
+    </details>
+    <details>
+      <summary>7. Why are robots.txt and sitemap important for SEO?</summary>
+      <p>Robots.txt helps search engines understand crawl rules, while sitemap.xml helps search engines discover and index pages faster.</p>
+    </details>
+    <details>
+      <summary>8. Does this tool help improve Google rankings?</summary>
+      <p>The tool identifies SEO issues and improvement opportunities. Fixing these problems can help improve website visibility and SEO performance.</p>
+    </details>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section class="section">
+  <div class="section-head">
+    <span class="kicker">SEO blogs</span>
+    <h2>Learn SEO with our guides</h2>
+  </div>
+  <div class="grid-3">
+    <a href="/blog/free-seo-audit-tool" class="post-card"><div class="body"><h3>Free SEO Audit Tool Guide</h3><p>How to run a free SEO audit and read your SEO score.</p><span class="more">Read guide →</span></div></a>
+    <a href="/blog/improve-website-seo-score" class="post-card"><div class="body"><h3>Improve Website SEO Score</h3><p>Easy fixes that lift titles, headings, speed and usability.</p><span class="more">Read guide →</span></div></a>
+    <a href="/blog/on-page-seo-checklist" class="post-card"><div class="body"><h3>On Page SEO Checklist</h3><p>A practical checklist for content, meta tags and links.</p><span class="more">Read guide →</span></div></a>
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2>Ready to check your SEO score?</h2>
+  <p>Run a free audit now and find out what is holding your rankings back.</p>
+  <a class="btn btn-lg" href="#audit">Analyze my website</a>
+</div>
+
+</div>
+</main>
+
+{% include "_footer.html" %}
+
+</body>
+</html>

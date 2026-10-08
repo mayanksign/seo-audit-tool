@@ -1,0 +1,2 @@
+# Only needed to run tests/test_seo_core.py parity checks against the original BeautifulSoup logic
+beautifulsoup4

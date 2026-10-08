@@ -1,0 +1,14 @@
+[project]
+name = "seo-audit-tool"
+version = "0.1.0"
+description = "Free SEO audit tool running on Cloudflare Python Workers"
+requires-python = ">=3.13"
+# The Worker has no third-party runtime dependencies (standard library only).
+# Flask/requests/gunicorn for local development live in requirements-local.txt.
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "workers-py",
+    "workers-runtime-sdk",
+]

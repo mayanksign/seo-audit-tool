@@ -7,114 +7,21 @@
     <meta name="robots" content="index, follow">
     <title>Privacy Policy - Free SEO Audit</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: #0f172a;
-            color: #ffffff;
-            line-height: 1.7;
-            padding: 30px 15px;
-        }
-
-        .container {
-            max-width: 950px;
-            margin: 60px auto;
-            background: #1e293b;
-            padding: 40px 30px;
-            border-radius: 14px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
-            border: 1px solid #334155;
-        }
-
-        h1 {
-            text-align: center;
-            font-size: 36px;
-            margin-bottom: 10px;
-            color: #ffffff;
-        }
-
-        .effective-date {
-            text-align: center;
-            color: #94a3b8;
-            margin-bottom: 30px;
-            font-size: 15px;
-        }
-
-        h2 {
-            color: #38bdf8;
-            margin-top: 28px;
-            margin-bottom: 10px;
-            font-size: 24px;
-            border-left: 4px solid #38bdf8;
-            padding-left: 12px;
-        }
-
-        p {
-            color: #cbd5e1;
-            margin-bottom: 14px;
-            font-size: 16px;
-        }
-
-        ul {
-            margin: 10px 0 18px 22px;
-        }
-
-        ul li {
-            color: #cbd5e1;
-            margin-bottom: 8px;
-        }
-
-        a {
-            color: #38bdf8;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .highlight {
-            color: #f8fafc;
-            font-weight: bold;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                padding: 20px 12px;
-            }
-
-            .container {
-                margin: 30px auto;
-                padding: 25px 18px;
-            }
-
-            h1 {
-                font-size: 28px;
-            }
-
-            h2 {
-                font-size: 21px;
-            }
-
-            p, ul li {
-                font-size: 15px;
-            }
-        }
-    </style>
+      <link rel="icon" href="/favicon.ico?v=2">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="stylesheet" href="/static/site.css">
 </head>
 <body>
 
-    <div class="container">
-        <h1>Privacy Policy</h1>
-        
+{% include "_header.html" %}
 
-        <p>
+<main id="content">
+<section class="page-hero"><div class="wrap"><h1>Privacy Policy</h1>
+<p>How we collect, use and protect your information when you use SEO SCORE.</p></div></section>
+<div class="prose-card">
+<p>
             Welcome to <span class="highlight">SEO SCORE</span> (
             <a href="https://www.freeseoaudit.site/" target="_blank">https://www.freeseoaudit.site/</a>
             ). We value your privacy and are committed to protecting your information. This Privacy Policy explains how we collect, use, and safeguard data when you use our website and SEO audit tools.
@@ -201,7 +108,10 @@
         <p>
             Email: mayanksingh94645@gmail.com
         </p>
-    </div>
+</div>
+</main>
+
+{% include "_footer.html" %}
 
 </body>
 </html>

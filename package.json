@@ -1,0 +1,18 @@
+{
+  "name": "seo-audit-tool",
+  "private": true,
+  "description": "Free SEO audit tool (Flask + Cloudflare Python Worker)",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "python -m unittest discover -s tests -p \"test_*.py\"",
+    "smoke": "python tests/smoke.py http://127.0.0.1:8787",
+    "vendor": "uv pip install --target python_modules workers-runtime-sdk",
+    "dev": "uv run pywrangler dev",
+    "dev:windows": "npm run vendor && wrangler dev",
+    "deploy": "uv run pywrangler deploy",
+    "deploy:windows": "npm run vendor && wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.148.0"
+  }
+}
